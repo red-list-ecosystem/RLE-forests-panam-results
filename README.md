@@ -16,4 +16,8 @@ The original assessment and analysis was published in:
 The original results dataset (Rdata format) is available at: 
 > Ferrer-Paris, José R. (2018): IUCN Red List of Ecosystem assessment results for IVC Forest Macrogroups in the Americas region. figshare. Dataset. https://doi.org/10.6084/m9.figshare.7488872.v1 
 
+Output of this dataset was also used to [illustrate the application of Ecosystem indices](https://github.com/red-list-ecosystem/rle_indices) in the following publication :
+> Rowland JA, Bland LM, Keith DA, Juffe‐Bignoli D, Burgman MA, Etter A, Ferrer‐Paris JR, Miller RM, Skowno AL, Nicholson E. 2020. Ecosystem indices to support global biodiversity conservation. Conservation Letters 13:311. DOI: http://dx.doi.org/10.1111/conl.12680
+
+
 

@@ -37,3 +37,19 @@ str(SpatialCriteria.Country)
 ## Detailed tables for functional criteria C and D
 str(FunctionalCriteria.Global)
 str(FunctionalCriteria.Country)
+
+## in order to get a table for calculating ecosystem indices
+## (compare with https://raw.githubusercontent.com/red-list-ecosystem/rle_indices/master/Github_example_AmericanForests_EHI.csv)
+
+FunctionalCriteria.Global %>% left_join(Macrogroups.Global,by="IVC.macrogroup_key") %>% transmute(IVC.formation,
+                                  mean_severity_C2a=best.estimate.mean.severity.ClimateChange.2000.2050,
+                                  extent_C2a=if_else(is.na(best.estimate.mean.severity.ClimateChange.2000.2050),as.numeric(NA),1),
+                                  mean_severity_C2b=best.estimate.mean.severity.SurfaceWater.19XX.20XX,
+                                  extent_C2b=if_else(is.na(best.estimate.mean.severity.SurfaceWater.19XX.20XX),as.numeric(NA),1),
+                                  mean_severity_D1=best.estimate.mean.severity.LandUseIntensity.1950.2000,
+                                  extent_D1=if_else(is.na(best.estimate.mean.severity.LandUseIntensity.1950.2000),as.numeric(NA),1),
+                                  mean_severity_D2b=best.estimate.mean.severity.Defaunation.19XX.20XX,
+                                  extent_D2b=if_else(is.na(best.estimate.mean.severity.Defaunation.19XX.20XX),as.numeric(NA),1),
+                                  mean_severity_D3=best.estimate.mean.severity.LandUseIntensity.1750.2000,
+                                  extent_D3=if_else(is.na(best.estimate.mean.severity.LandUseIntensity.1750.2000),as.numeric(NA),1)
+                              ) -> example_EHI_global
