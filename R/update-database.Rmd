@@ -1,4 +1,10 @@
-# IUCN RLE assessments
+---
+title: IUCN Red List of Ecosystem assessment for the forest macrogroups of the Americas
+subtitle: Upload tables to postgres database
+author: JR Ferrer-Paris
+---
+
+# Tables for the IUCN RLE assessment
 
 We will add information on the assessment in a table
 
@@ -43,17 +49,20 @@ For all criteria we will include best estimates and plausible bounds as an array
 require(dplyr)
 library(tidyr)
 require(magrittr)
-require("RPostgreSQL")
+require(RPostgreSQL)
+
+source("~/proyectos/IUCN/RLE-forests-panam-results/env/project-env.R")
+
 
 ## working directory and path to scripts
 script.dir <- Sys.getenv("SCRIPTDIR")
-work.dir <- Sys.getenv("WORKDIR")
-setwd(work.dir)
+setwd(script.dir)
 
 drv <- dbDriver("PostgreSQL")
-con <- dbConnect(drv, dbname = "IUCN",
-                 host = "localhost", port = 5432,
-                 user = "jferrer")
+con <- dbConnect(drv, dbname = Sys.getenv("DBNAME"),
+                 host = Sys.getenv("DBHOST"),
+                 port = Sys.getenv("DBPORT"),
+                 user = Sys.getenv("DBUSER"))
 
 ## Assessment outcomes
 load(sprintf("%s/Rdata/20181123_MacrogroupsCountry.rda", script.dir))
