@@ -6,6 +6,7 @@ if (Sys.getenv("GISDATA") != "") {
    gis.data <- Sys.getenv("GISDATA")
    work.dir <- Sys.getenv("WORKDIR")
    script.dir <- Sys.getenv("SCRIPTDIR")
+   src.dir <- Sys.getenv("SRCDIR")
 } else {
    out <- Sys.info()
    username <- out[["user"]]
@@ -20,7 +21,7 @@ if (Sys.getenv("GISDATA") != "") {
       roraima.local={
          gis.data <- sprintf("%s/gisdata/",Sys.getenv("HOME"))
          work.dir <- sprintf("%s/tmp/%s",Sys.getenv("HOME"),projectname)
-      },
+        },
       {
          if (file.exists("/srv/scratch/cesdata")) {
             gis.data <- sprintf("/srv/scratch/cesdata/gisdata/")

@@ -17,7 +17,7 @@ roraima)
   export GISDATA=$HOME/gisdata
   export GISDB=$HOME/gisdb/ecosphere
   export WORKDIR=$HOME/tmp/$PROJECTNAME
-  export SRCDIR=$HOME/Cloudstor/UNSW/data/
+  export SRCDIR=/Volumes/Teradactylo/gisdata
   ;;
 *)
   if [ -e /srv/scratch/cesdata ]
@@ -26,6 +26,8 @@ roraima)
     export GISDATA=$SHAREDSCRATCH/gisdata
     export GISDB=$SHAREDSCRATCH/gisdb
     export OUTDIR=$SHAREDSCRATCH/output/$PROJECT
+    export SRCDIR=$GISDATA
+
     source $HOME/.secrets
   else
     echo "I DON'T KNOW WHERE I AM, please customize project-env.sh file"

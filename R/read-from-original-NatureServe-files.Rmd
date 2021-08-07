@@ -1,0 +1,154 @@
+## NatureServe files
+
+These files were shared during the Alaska/Patagonia project. Original from NatureServe with some comments added by Provita Staff
+
+```{r}
+source $HOME/proyectos/IUCN/RLE-forests-panam-results/env/project-env.sh
+```
+
+This file includes the EcoVeg hierarchy (same information in xlsx and csv format):
+
+
+```{r}
+#!R --vanilla
+require(dplyr)
+library(tidyr)
+require(magrittr)
+require(readr)
+
+
+source("~/proyectos/IUCN/RLE-forests-panam-results/env/project-env.R")
+
+data <- read_csv("/Volumes/Teradactylo/gisdata/NatureServe_IVC/EcoVeg_typology_hierarchy 30 Jan 30 2015.csv")
+data %>% filter(!is.na(class)) %>% transmute(code=`Division Code`,level='class',name=`class`) -> EcoVeg_typology_hierarchy
+
+EcoVeg_typology_hierarchy %<>% bind_rows(data %>% filter(!is.na(subclass)) %>% transmute(code=`Division Code`, level='subclass', name=`subclass`, parent=gsub(".[A-Z]+$","",`Division Code`)))
+
+EcoVeg_typology_hierarchy %<>% bind_rows(data %>% filter(!is.na(formation)) %>% transmute(code=`Division Code`, level='formation', name=`formation`, parent=sub(".[0-9]+$","",`Division Code`)))
+
+EcoVeg_typology_hierarchy %<>% bind_rows(data %>% filter(!is.na(division)) %>% transmute(code=`Division Code`, EV_key=division_key, level='division', name=`division`, parent=sub(".[A-Za-z]+$","",`Division Code`)))
+
+EcoVeg_typology_hierarchy %<>% bind_rows(data %>% filter(!is.na(macrogroup_key)) %>% transmute(code=paste(`Division Code`,gsub("^[M0]+","",macrogroup_key)), EV_key=macrogroup_key, level='macrogroup',name=`macrogroup_name`,parent=`Division Code`))
+
+EcoVeg_typology_hierarchy %>% group_by(level) %>% summarise(total=n(),n_distinct(code))
+
+EcoVeg_typology_hierarchy %>% filter(!parent %in% EcoVeg_typology_hierarchy$code)
+
+save(file=sprintf("%s/Rdata/%s_EcoVeg_hierarchy.rda",script.dir,"20150130"),EcoVeg_typology_hierarchy)
+
+
+```
+
+This file include validation data from NS (same information as `Americas_Forests_JosseTable.csv`, `Americas_Forests_PatTable.csv` and `South_America_Results_IUCN_RLE_April2015.xlsx`)
+```{r}
+#!R --vanilla
+require(dplyr)
+library(tidyr)
+require(magrittr)
+require(readxl)
+
+source("~/proyectos/IUCN/RLE-forests-panam-results/env/project-env.R")
+hoy <- format(Sys.time(), "%Y%m%d")
+
+
+data <- read_xlsx(sprintf("%s/NatureServe_IVC/Americas_Forests.xlsx", src.dir))
+data %<>% filter(!is.na(MG_cd))
+
+data %>%
+  transmute(mg_key=sprintf("M%03i",MG_cd),
+    macrogroup=`IVC Macrogroup Code and Name`,
+    NS_cell_count=`Count_Combo`,
+    NS_potential_extent_km2=`Potential Extent (km2)`,
+    NS_current_extent_km2=`Current Extent (km2)`,
+    ## Many uncommon types without samples for assessment of agreement
+    ## change -99 to NA
+    NS_validation_local=if_else(`% Agreement Local` <0,as.numeric(NA),`% Agreement Local`),
+    NS_validation_5km=if_else(`% Agreement within 5km2` <0,as.numeric(NA),`% Agreement within 5km2`)) -> NS_validation
+
+
+data <- read_xlsx(sprintf("%s/NatureServe_IVC/Americas_Forests.xlsx", src.dir), sheet=2 ,skip=1)
+data %<>% filter(!is.na(mg_key))
+
+data %>% filter(!mg_key %in% NS_validation$mg_key) %>% transmute(mg_key,
+  macrogroup=`IVC Hierarchy_Macrogroup`,
+  NS_cell_count=`Potential Count`,
+  NS_potential_extent_km2=`Current Km2`*100/`Percent Extant`,
+  NS_current_extent_km2=`Current Km2`) -> SAM_data
+
+NS_validation %<>% bind_rows(SAM_data)
+
+data %>% filter(!is.na(`Expert Confidence for use in IUCN Red List (NatureServe)`)  ) %>% pull(mg_key) -> slc
+NS_validation %<>% mutate(SAM_experts_confidence=if_else(mg_key %in% slc,'Very High',as.character(NA)))
+
+data %>% filter(!is.na(`...32`)) %>% pull(mg_key) -> slc
+NS_validation %<>% mutate(SAM_experts_confidence=if_else(mg_key %in% slc,'High',SAM_experts_confidence))
+
+data %>% filter(!is.na(`...33`)) %>% pull(mg_key) -> slc
+NS_validation %<>% mutate(SAM_experts_confidence=if_else(mg_key %in% slc,'Medium',SAM_experts_confidence))
+
+data %>% filter(!is.na(`...34`)) %>% pull(mg_key) -> slc
+NS_validation %<>% mutate(SAM_experts_confidence=if_else(mg_key %in% slc,'Low',SAM_experts_confidence))
+
+data %>% filter(!is.na(`...35`)) %>% pull(mg_key) -> slc
+NS_validation %<>% mutate(SAM_experts_confidence=if_else(mg_key %in% slc,'Very Low',SAM_experts_confidence))
+
+data %>% transmute(mg_key,NS_comments=`...36`) -> SAM_comments
+
+NS_validation %<>% left_join(SAM_comments,by='mg_key')
+
+# Results apparently from April 2015
+save(file=sprintf("%s/Rdata/%s_Macrogroup_validation_data.rda",script.dir,"20150401"),NS_validation)
+
+```
+
+This file include the validation data from NS and the consistency test described in  Ferrer-Paris et al. 2019
+```{r}
+#!R --vanilla
+require(dplyr)
+library(tidyr)
+require(magrittr)
+require(readxl)
+
+source("~/proyectos/IUCN/RLE-forests-panam-results/env/project-env.R")
+hoy <- format(Sys.time(), "%Y%m%d")
+full_validation_table <- read_xlsx(sprintf("%s/NatureServe_IVC/TablaA1.xlsx",src.dir),sheet=1,skip=1)
+save(file=sprintf("%s/Rdata/%s_Macrogroup_validation_data.rda",script.dir,hoy),NS_validation,full_validation_table)
+
+```
+
+List of species associated with forest macrogroups:
+
+```{r}
+#!R --vanilla
+require(dplyr)
+library(tidyr)
+require(magrittr)
+require(readxl)
+
+source("~/proyectos/IUCN/RLE-forests-panam-results/env/project-env.R")
+hoy <- format(Sys.time(), "%Y%m%d")
+species_macrogroup <- read_xlsx(sprintf("%s/NatureServe_IVC/TablaEspeciesMG.xlsx",src.dir),sheet=1)
+
+
+species_macrogroup %<>% mutate(mg_key=sub("\\.","",MG))
+species_macrogroup %>% pull(3) %>% strsplit(',') -> list1
+species_macrogroup %>% pull(4) %>% strsplit(',') -> list2
+
+spp.list <- tibble()
+for (k in 1:nrow(species_macrogroup)) {
+  spp.list %<>% bind_rows(data.frame(
+    mg_key=(species_macrogroup %>% slice(k) %>% pull(mg_key)),
+    macrogroup=(species_macrogroup %>% slice(k) %>% pull(2)),
+    species_name=unique(c(trimws(list1[[k]]),trimws(list2[[k]])))
+  ))
+}
+
+spp.list %<>% filter(!species_name %in% c(NA,"N.T.","N.D."))
+
+spp.list %>% group_by(mg_key) %>% summarise(total=n(),nspp=n_distinct(species_name)) # %>% print.AsIs
+
+characteristic_biota <- spp.list
+
+save(file=sprintf("%s/Rdata/%s_Macrogroup_characteristic_biota.rda",script.dir,hoy),characteristic_biota)
+
+```
