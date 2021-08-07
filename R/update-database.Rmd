@@ -42,6 +42,13 @@ ALTER TABLE ivc_assessment
 
 ```
 
+We source these files to set up the database connection information:
+
+```{r}
+source $HOME/proyectos/IUCN/RLE-forests-panam-results/env/project-env.sh
+
+```
+
 For all criteria we will include best estimates and plausible bounds as an array. Best estimate is always the first value.
 
 ```{r}
