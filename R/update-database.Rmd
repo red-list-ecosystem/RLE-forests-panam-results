@@ -6,7 +6,7 @@ author: JR Ferrer-Paris
 
 # Tables for the IUCN RLE assessment
 
-We will add information on the assessment in a table
+We use `R` for extracting data from the tables and translating to the PostgreSQL database. First we will add information on the assessment in a table
 
 ```sql
 
@@ -136,4 +136,16 @@ Replicate these values to be updated later
 
 INSERT INTO ivc_assessment
 SELECT mg_key,country,'Imperiled, MS','2021-04-01',a1,a2b,a3,b1,b2,b3,b_conds,c2a,c2b,d1,d2b,d3,category,threat_criteria FROM ivc_assessment where country='global' AND ref_code='Ferrer-Paris et al. 2019'
+```
+
+
+This is the list of codes for dry forests:
+
+```sql
+
+select string_agg(value::varchar,',') from ivc_americas WHERE ivc_format='Tropical Seasonally Dry Forest' ;
+--  570,134,294,296,561,562,563,565,566,567,568,571,572,573,574,575,872
+
+update ivc_americas set macrogroup='Cerradão Sclerophyllous Woodland' where value=872;
+
 ```
