@@ -6,11 +6,47 @@ author: JR Ferrer-Paris
 
 # Tables for the IUCN RLE assessment
 
+We source these files to set up the database connection information:
+
+```{r}
+source $HOME/proyectos/IUCN/RLE-forests-panam-results/env/project-env.sh
+```
+
+We create a schema for the IUCN RLE assessment:
+
 We use `R` for extracting data from the tables and translating to the PostgreSQL database. First we will add information on the assessment in a table
+
+`psql -h $DBHOST -d $DBNAME -U $DBUSER`
 
 ```sql
 
-CREATE TABLE ivc_assessment (
+CREATE SCHEMA ivc_rle;
+
+CREATE TABLE ivc_rle.divisions (
+  ev_key character varying(4),
+  code text PRIMARY KEY,
+  name text,
+  fcode text,
+  formation text,
+  scode text,
+  subclass text,
+  ccode text,
+  class text
+);
+
+CREATE TABLE ivc_rle.macrogroups (
+  mg_key character varying(4) PRIMARY KEY,
+  code text,
+  name text,
+  parent text
+);
+ALTER TABLE ivc_rle.macrogroups
+  ADD CONSTRAINT ev_fkey
+  FOREIGN KEY (parent)
+  REFERENCES ivc_rle.divisions(code)
+  ON DELETE CASCADE ON UPDATE CASCADE;
+
+CREATE TABLE ivc_rle.assessment (
    mg_key character varying(4),
    country text,
    ref_code text,
@@ -34,20 +70,15 @@ CREATE TABLE ivc_assessment (
 );
 
 
-ALTER TABLE ivc_assessment
+ALTER TABLE ivc_rle.assessment
   ADD CONSTRAINT mg_fkey
   FOREIGN KEY (mg_key)
-  REFERENCES ivc_americas(mg_key)
+  REFERENCES ivc_rle.macrogroups(mg_key)
   ON DELETE CASCADE ON UPDATE CASCADE;
 
 ```
 
-We source these files to set up the database connection information:
 
-```{r}
-source $HOME/proyectos/IUCN/RLE-forests-panam-results/env/project-env.sh
-
-```
 
 For all criteria we will include best estimates and plausible bounds as an array. Best estimate is always the first value.
 
@@ -72,6 +103,31 @@ con <- dbConnect(drv, dbname = Sys.getenv("DBNAME"),
                  user = Sys.getenv("DBUSER"))
 
 ## Assessment outcomes
+load(sprintf("%s/Rdata/%s_EcoVeg_hierarchy.rda",script.dir,"20150130"))
+
+a1 <- EcoVeg_typology_hierarchy %>% filter(level %in% 'division') %>% transmute(ev_key=EV_key,code,name,fcode=parent)
+a2 <- EcoVeg_typology_hierarchy %>% filter(level %in% 'formation') %>% transmute(fcode=code,formation=name,scode=parent)
+a3 <- EcoVeg_typology_hierarchy %>% filter(level %in% 'subclass') %>% transmute(scode=code,subclass=name,ccode=parent)
+a4 <- EcoVeg_typology_hierarchy %>% filter(level %in% 'class') %>% transmute(ccode=code,class=name)
+
+division_table <- a1 %>% left_join(a2,by='fcode') %>% left_join(a3,by='scode') %>% left_join(a4,by='ccode')
+
+dbWriteTable(con,"tmptable3",division_table,overwrite=T,row.names = FALSE)
+qry <- "INSERT INTO ivc_rle.divisions SELECT * FROM tmptable3 ON CONFLICT (code) DO NOTHING"
+dbSendQuery(con,qry)
+qry <- "DROP TABLE tmptable3"
+dbSendQuery(con,qry)
+
+
+macrogrup_table <- EcoVeg_typology_hierarchy %>% filter(level %in% 'macrogroup') %>% transmute(mg_key=EV_key,code,name,parent)
+
+dbWriteTable(con,"tmptable3",macrogrup_table,overwrite=T,row.names = FALSE)
+qry <- "INSERT INTO ivc_rle.macrogroups SELECT * FROM tmptable3 ON CONFLICT (mg_key) DO NOTHING"
+dbSendQuery(con,qry)
+qry <- "DROP TABLE tmptable3"
+dbSendQuery(con,qry)
+
+
 load(sprintf("%s/Rdata/20181123_MacrogroupsCountry.rda", script.dir))
 
  Macrogroups.Global %>%transmute(
@@ -94,7 +150,7 @@ load(sprintf("%s/Rdata/20181123_MacrogroupsCountry.rda", script.dir))
     paste(Overall.Category,gsub(" -- ",",",Overall.Bounds),sep=","))),
     threat_criteria=ifelse(is.na(Threat.criteria),"NULL",sprintf("'{%s}'", Threat.criteria))) -> Assessment
 
-qry <- sprintf("INSERT INTO ivc_assessment (mg_key,country,ref_code,assessment_date,a1,a2b,a3,b1,b2,b3,c2a,c2b,d1,d2b,d3,category,threat_criteria) values %s",
+qry <- sprintf("INSERT INTO ivc_rle.assessment (mg_key,country,ref_code,assessment_date,a1,a2b,a3,b1,b2,b3,c2a,c2b,d1,d2b,d3,category,threat_criteria) values %s",
    paste( with(Assessment,sprintf("('%s','%s','Ferrer-Paris et al. 2019','2018-12-01',%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",mg_key,country,a1,a2b,a3,b1,b2,b3,c2a,c2b,d1,d2b,d3,category,threat_criteria)),collapse=","))
 
 dbSendQuery(con,qry)
@@ -120,32 +176,25 @@ dbSendQuery(con,qry)
     paste(Overall.Category,gsub(" -- ",",",Overall.Bounds),sep=","))),
     threat_criteria=ifelse(is.na(Threat.criteria),"NULL",sprintf("'{%s}'", Threat.criteria))) -> Assessment
 
-qry <- sprintf("INSERT INTO ivc_assessment (mg_key,country,ref_code,assessment_date,a1,a2b,a3,b1,b2,b3,c2a,c2b,d1,d2b,d3,category,threat_criteria) values %s",
+qry <- sprintf("INSERT INTO ivc_rle.assessment (mg_key,country,ref_code,assessment_date,a1,a2b,a3,b1,b2,b3,c2a,c2b,d1,d2b,d3,category,threat_criteria) values %s",
    paste( with(Assessment,sprintf("('%s','%s','Ferrer-Paris et al. 2019','2018-12-01',%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)",mg_key,country,a1,a2b,a3,b1,b2,b3,c2a,c2b,d1,d2b,d3,category,threat_criteria)),collapse=","))
 
 dbSendQuery(con,qry)
-
-
 dbDisconnect(con)
-
 
 ```
 
 Replicate these values to be updated later
 ```sql
-
-INSERT INTO ivc_assessment
-SELECT mg_key,country,'Imperiled, MS','2021-04-01',a1,a2b,a3,b1,b2,b3,b_conds,c2a,c2b,d1,d2b,d3,category,threat_criteria FROM ivc_assessment where country='global' AND ref_code='Ferrer-Paris et al. 2019'
+INSERT INTO ivc_rle.assessment
+SELECT mg_key,country,'Imperiled, MS','2021-04-01',a1,a2b,a3,b1,b2,b3,b_conds,c2a,c2b,d1,d2b,d3,category,threat_criteria FROM ivc_rle.assessment where country='global' AND ref_code='Ferrer-Paris et al. 2019'
 ```
 
 
-This is the list of codes for dry forests:
+This is the list of mg_keys for dry forests (including Paleotropical ones):
 
 ```sql
-
-select string_agg(value::varchar,',') from ivc_americas WHERE ivc_format='Tropical Seasonally Dry Forest' ;
---  570,134,294,296,561,562,563,565,566,567,568,571,572,573,574,575,872
-
-update ivc_americas set macrogroup='Cerradão Sclerophyllous Woodland' where value=872;
-
+select string_agg(mg_key::varchar,',' ORDER BY mg_key) from ivc_rle.macrogroups WHERE parent like '1.A.1%' ;
+-- not needed here:
+-- update ivc_americas set macrogroup='Cerradão Sclerophyllous Woodland' where value=872;
 ```
