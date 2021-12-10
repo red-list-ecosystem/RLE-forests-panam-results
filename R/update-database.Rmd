@@ -198,3 +198,11 @@ select string_agg(mg_key::varchar,',' ORDER BY mg_key) from ivc_rle.macrogroups 
 -- not needed here:
 -- update ivc_americas set macrogroup='Cerradão Sclerophyllous Woodland' where value=872;
 ```
+
+Let's add a column with the integer value of the mg_key:
+```sql
+ALTER TABLE ivc_rle.macrogroups
+  ADD COLUMN ivc_value integer NULL UNIQUE;
+UPDATE ivc_rle.macrogroups set ivc_value=SUBSTRING(mg_key,2,4)::integer;
+
+```
