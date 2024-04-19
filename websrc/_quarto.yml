@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "IUCN RLE for the forest of the Americas"
+  repo-url: https://github.com/red-list-ecosystem/RLE-forests-panam-results
+  repo-branch: mostly-harmless
+  repo-actions: [edit, issue]
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+
