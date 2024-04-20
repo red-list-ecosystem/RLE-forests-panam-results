@@ -4,17 +4,12 @@ title: "IUCN Red List of Ecosystem for the forest of the Americas"
 
 This website provides a summary and update of the results from the IUCN Red List of Ecosystem (RLE) assessment for the tropical and temperate forests macrogroups of the Americas. 
 
-The original assessment and analysis was published in:
+The original assessment and analysis was published by @Ferrer-Paris_2019_RLE_Forests.
 
-> Ferrer-Paris, J.R., Zager, I., Keith, D.A., Oliveira-Miranda, M.A., Rodríguez, J.P, Josse, C., González-Gil, M., Miller, R.M., Zambrana-Torrelio, C., Barrow, E., 2019. An ecosystem risk assessment of temperate and tropical forests of the Americas with an outlook on future conservation strategies. Conserv. Lett. 12. https://doi.org/10.1111/conl.12623
-
-The continental-scale assessment was a flagship project of the IUCN Red List of Ecosystem Thematic group and is used as an example for many other applications of the RLE. There is a critical need to update and improve the assessment as new information is available and make sure future users are aware of the caveats of this assessment and that they are able to use the best available data and results for decision making and reporting.
+The continental-scale assessment was a flagship project of the IUCN Red List of Ecosystem Thematic group and is used as an example for many other applications of the RLE [@Bland_2019_Impact_RLE; @Nicholson_2024]. There is a critical need to update and improve the assessment as new information is available and make sure future users are aware of the caveats of this assessment and that they are able to use the best available data and results for decision making and reporting.
 
 An official summary of the original assessment is available [on-line](https://assessments.iucnrle.org/systematics/8), and the original results dataset (Rdata format) is available at: 
 
 > Ferrer-Paris, José R. (2018): IUCN Red List of Ecosystem assessment results for IVC Forest Macrogroups in the Americas region. figshare. Dataset. https://doi.org/10.6084/m9.figshare.7488872.v1 
 
-Output of this dataset was also used to [illustrate the application of Ecosystem indices](https://github.com/red-list-ecosystem/rle_indices) in the following publication :
-
-> Rowland JA, Bland LM, Keith DA, Juffe‐Bignoli D, Burgman MA, Etter A, Ferrer‐Paris JR, Miller RM, Skowno AL, Nicholson E. 2020. Ecosystem indices to support global biodiversity conservation. Conservation Letters 13:311. DOI: http://dx.doi.org/10.1111/conl.12680
-
+Output of this dataset was also used to [illustrate the application of Ecosystem indices](https://github.com/red-list-ecosystem/rle_indices) in @Rowland_2019_Indices_Ecosystem.

@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: docs
+  output-dir: ../docs
 
 website:
   title: "IUCN RLE for the forest of the Americas"
@@ -8,10 +8,32 @@ website:
   repo-branch: mostly-harmless
   repo-actions: [edit, issue]
   navbar:
+    title: "RLE forests of the Americas"
+    type: inverse
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: "{{< fa gear >}} Home"
+        icon: fa-home
+        href: index.qmd
+      - text: "{{< fa landmark >}} Ecosystem classification"
+        menu:
+          - text: "IVC / EcoVeg"
+            href: continental/ecos.qmd
+      - text: "{{< fa leaf >}} Results by formation"
+        menu:
+          - text: "Tropical dry forest"
+            href: continental/1.A.1/mcdg-list.qmd
+      - text: "{{< fa globe >}} Results by country"
+        menu:
+          - text: "South America"
+            href: countries/SAM/country-list.qmd
+    right:
+      - text: "How to..."
+        icon: question
+        menu:
+          - text: "(re-)create this site"
+            href: notes.qmd
+bibliography: 
+  - RLE.bib
 
 format:
   html:

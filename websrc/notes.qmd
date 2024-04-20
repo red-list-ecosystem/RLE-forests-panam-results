@@ -1,0 +1,62 @@
+---
+author: "José R. Ferrer-Paris"
+title: "This is how we built this site!"
+editor_options: 
+  chunk_output_type: console
+---
+
+This website was built to provide additional information about the continental assessment of forest in the Americas. 
+
+Information provided with the intention of improving documentation and encouraging appropriate use of the data, but we take no responsibility for errors of commission or omission. 
+
+Please consider that this website is under continuous destruction and reconstruction, but you should be able to access the historical records of changes by consulting the commit history in the GitHub repository.  If you require clarifications about any changes, please open an issue or send me a message. 
+
+## We built this site with Rock-'n'-Roll!
+
+Not really, but appropriate background music helps a lot!
+
+All files are available in a [GitHub repository](https://github.com/red-list-ecosystem/RLE-forests-panam-results).  The `mostly-harmless` branch uses [Quarto](https://quarto.org/docs/websites/) to build the site.
+
+Initialise a quarto website with:
+
+```sh
+cd ~/proyectos/IUCN-RLE/RLE-forests-panam-results
+quarto create project website websrc
+```
+
+The source code of the website is in subfolder `websrc` but the output folder with the html content is defined in `websrc/_quarto.yml`.
+
+## Render site
+
+With quarto and RStudio we can open the Build tab and select Build Website...
+
+Or we can go to the command line and render the site: 
+
+```sh
+quarto render websrc
+```
+
+And then launch a preview:
+
+```sh
+quarto preview websrc
+```
+
+If this work, we can just `git add`, `git commit` and `git push` it to the repo and see the changes!
+
+
+## Font Awesome
+
+They work well out of the box with Rmarkdown, but for quarto we need to install an extension.
+
+Switch to the repository folder and checkout the git branch we are working on, and then:
+
+```sh
+quarto install extension quarto-ext/fontawesome
+```
+
+Now I can use `{{{< fa smile >}}}` in the text and get a {{< fa smile >}}, or `{{{< fa lemon >}}}` and get a {{< fa lemon >}}.
+
+## Just in case
+
+![ [Stand back, I know regular expressions.](https://xkcd.com/208/)](https://imgs.xkcd.com/comics/regular_expressions.png)

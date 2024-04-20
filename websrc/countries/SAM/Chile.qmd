@@ -1,0 +1,12 @@
+---
+title: "Chile"
+categories:
+  - National ecosystem map
+  - National RLE
+---
+
+There are national and subnational assessments available for Chile [@Pliscoff_2019;@Alaniz_2021].
+
+An update of the national assessment is currently underway.
+
+Results from the continental assessment should only be used for academic purposes.

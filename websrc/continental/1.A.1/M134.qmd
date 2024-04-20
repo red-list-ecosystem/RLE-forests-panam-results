@@ -1,0 +1,80 @@
+---
+title: "M134 - Caribbean Coastal Lowland Dry Forest"
+categories:
+  - 1.A.1.Ea Caribbeo-Mesoamerican Dry Forest
+execute: 
+  echo: false
+  warning: false
+---
+
+```{r}
+library(dplyr)
+here::i_am("websrc/continental/1.A.1/mcdg-list.qmd")
+load(here::here("Rdata/20150130_EcoVeg_hierarchy.rda"))
+load(here::here("Rdata/20181123_MacrogroupsCountry.rda"))
+
+Macrogroups.Global |> filter(IVC.macrogroup_key == "M134") |>
+  select(IVC.Name, Overall.Category, Overall.Bounds, Threat.criteria ) |>
+  t() |>
+  knitr::kable()
+```
+
+## Description
+
+Description of this macrogroup is available at [NatureServe Explorer](https://explorer.natureserve.org/Taxon/ELEMENT_GLOBAL.2.838402/Bursera_simaruba_-_Coccoloba_diversifolia_-_Eugenia_sp_Caribbean_Coastal_Lowland_Dry_Forest_Macrogroup#:~:text=This%20vegetation%20is%20found%20in,canopies%20with%20no%20emergent%20trees.).
+
+Please note the changes in code and nomenclature between the version used for the assessment (in this website) and the current values in the NatureServe database.
+
+### Characteristic biota
+
+```{r}
+load(here::here("Rdata/20210807_Macrogroup_characteristic_biota.rda"))
+biota <- characteristic_biota |> filter(mg_key %in% "M134")
+```
+
+The list of characteristic biota includes `r nrow(biota)` plant species, the first 20 are:
+
+```{r}
+#| results: asis
+biota |> head(20) |> pull(species_name) |>
+  paste(collapse = "; ") |>
+  cat()
+```
+
+
+### Geographical distribution
+
+This macrogroup is present in the following countries and territories:
+
+```{r}
+Macrogroups.Country |> filter(IVC.macrogroup_key == "M134") |> pull(Country)
+```
+
+## RLE Assessment -- 2019 
+
+This section summarises the results from @Ferrer-Paris_2019_RLE_Forests for this macrogroup.
+
+### Validation of distribution
+
+Prior to the RLE assessment, the distribution data for this macrogroup was validated with following results:
+
+```{r}
+load(here::here("Rdata/20210807_Macrogroup_validation_data.rda"))
+full_validation_table |> 
+  filter(`Macrogroup code` %in% "M134") |> 
+  t() |>
+  knitr::kable()
+  
+```
+
+
+### Results by subcriterion
+
+```{r}
+
+Macrogroups.Global |> filter(IVC.macrogroup_key == "M134") |>
+  select(A1:D3) |>
+  t() |>
+  knitr::kable()
+```
+

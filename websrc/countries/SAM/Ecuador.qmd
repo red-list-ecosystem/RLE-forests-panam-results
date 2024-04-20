@@ -1,0 +1,13 @@
+---
+title: "Ecuador"
+categories:
+  - partial national RLE 
+---
+
+There is a partial national assessments for the forests of Ecuador [@Noh_2020].
+
+There are interested organisations planning to do more RLE assessments in Ecuador.
+
+Local organisations should be contacted to inquire about the status of RLE assessments in the country.
+
+Results from the continental assessment can be used for academic purposes. The results for this country should be compared with any existing national assessments, and should not be used for conservation planning and action without proper national level validation and consultation with relevant stakeholders.

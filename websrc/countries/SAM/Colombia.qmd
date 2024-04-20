@@ -1,0 +1,12 @@
+---
+title: "Colombia"
+categories:
+  - National ecosystem map
+  - National RLE
+---
+
+There are national and subnational assessments available for Colombia [@Etter_2020; @Uribe_2021; @Uribe_2022].
+
+An update of the national assessment is currently underway.
+
+Results from the continental assessment should only be used for academic purposes.

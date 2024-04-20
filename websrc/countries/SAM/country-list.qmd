@@ -1,0 +1,11 @@
+---
+title: "South America"
+subtitle: "Results by country"
+listing: 
+ type: default
+ sort: "date desc"
+ categories: true
+ sort-ui: [title, date]
+---
+
+The following links include summary of results for selected countries in South America with our comments and recommendations for the use of the data at national level.
