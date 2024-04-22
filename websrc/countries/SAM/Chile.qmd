@@ -10,3 +10,99 @@ There are national and subnational assessments available for Chile [@Pliscoff_20
 An update of the national assessment is currently underway.
 
 Results from the continental assessment should only be used for academic purposes.
+
+## National vegetation map
+
+For Chile the current version of the map used for the national RLE assessment is available in Zenodo at <https://zenodo.org/records/60800> [@federico_luebert_2017_60800].
+ 
+## National assessment
+
+ 
+### Download the data
+
+The repository includes several compressed shapefiles and csv files with additional tabular data (check file shape_pisos.zip), and it also includes a csv file with the IUCN RLE results. 
+
+We first download and uncompress the shapefile with the vegetion units `shape_pisos`:
+
+```sh
+wget 'https://zenodo.org/record/60800/files/shape_pisos.zip?download=1' \
+    -O shape_pisos.zip
+unzip -u shape_pisos.zip
+```
+
+Then we download the csv file with the conservation status:
+
+```sh
+wget https://zenodo.org/record/60800/files/estado_conservacion.csv?download=1 \
+    -O estado_conservacion.csv
+```
+
+### Combine data
+
+We need to combine the new table with the attribute table of the shapefile. One option is to use the functions in the `gdal` library to perform a `join` operation on the tables:
+
+```sh
+ogr2ogr \
+    -sql "select CODIGO, PISO, FORMACION, Evaluación_Final from shape_pisos\
+         left join 'estado_conservacion.csv'.estado_conservacion \
+         on shape_pisos.CODIGO = estado_conservacion.Código_Piso" \ 
+    Chile-RLE.gpkg shape_pisos.shp -nlt MULTIPOLYGON
+```
+
+## Visualise risk categories
+
+### First step: create map using `gdal_rasterize`
+We can use other functions in the `gdal` library to transform the vector file we just created into a raster file with values of 1 to 6 for the RLE categories DD to CR:
+
+```sh
+LAYER=shape_pisos
+OGRINPUT=Chile-RLE.gpkg
+GDALOUTPUT=RLE-Chile-cat.tif 
+CATCOLUMN=Evaluación_Final
+gdal_rasterize -burn 0 -ts 500 1500 -l $LAYER $OGRINPUT $GDALOUTPUT
+gdal_rasterize -burn 1 -where "$CATCOLUMN='DD'" -l $LAYER $OGRINPUT $GDALOUTPUT
+gdal_rasterize -burn 2 -where "$CATCOLUMN='LC'" -l $LAYER $OGRINPUT $GDALOUTPUT
+gdal_rasterize -burn 3 -where "$CATCOLUMN='NT'" -l $LAYER $OGRINPUT $GDALOUTPUT
+gdal_rasterize -burn 4 -where "$CATCOLUMN='VU'" -l $LAYER $OGRINPUT $GDALOUTPUT
+gdal_rasterize -burn 5 -where "$CATCOLUMN='EN'" -l $LAYER $OGRINPUT $GDALOUTPUT
+gdal_rasterize -burn 6 -where "$CATCOLUMN='CR'" -l $LAYER $OGRINPUT $GDALOUTPUT
+```
+
+### Second step: show map using `R`
+
+```{r}
+#| eval: false
+here::i_am("systematic-assessments/Chile.qmd")
+data_folder <- "Data"
+
+library(terra)
+library(dplyr)
+library(tidyterra)
+library(sf)
+
+## country boundaries (World Bank source)
+WB_file <- here::here(data_folder,
+    "WB_Boundaries_GeoJSON_lowres/WB_countries_Admin0_lowres.geojson")
+CHL_pol <- vect(sf::read_sf(WB_file)) %>% 
+    filter(ISO_A3 %in% "CHL")
+
+clrs <- c(
+  "NE" = "white",
+  "DD" = "grey",
+  "LC" = "green4",
+  "NT" = "green",
+  "VU" = "yellow",
+  "EN" = "orange",
+  "CR" = "red")
+
+CHL <- rast(here::here(data_folder, "RLE-Chile-cat.tif"))
+levels(CHL) <- data.frame(val=0:6,cat=c("NE","DD","LC","NT","VU","EN","CR"))
+
+plot(CHL, col=clrs[c(1,3,5,6,7)], 
+    main = CHL_pol$FORMAL_EN, 
+    legend = TRUE, axes = TRUE,)
+plot(CHL_pol, add = T)
+
+```
+
+Compare this with published maps, for example [this one](https://sinia.mma.gob.cl/wp-content/uploads/2021/04/7-biodiversidad.pdf).

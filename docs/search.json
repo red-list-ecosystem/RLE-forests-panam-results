@@ -152,5 +152,47 @@
     "title": "Tropical Dry Forest & Woodland",
     "section": "",
     "text": "These macrogroups belong to several divisions within the IVC/EcoVeg classification hierarchy:\n\n\n\n\n\ncode\nlevel\nname\n\n\n\n\n1\nclass\n1 Forest & Woodland\n\n\n1.A\nsubclass\n1.A Tropical Forest & Woodland\n\n\n1.A.1\nformation\n1.A.1 Tropical Dry Forest & Woodland\n\n\n1.A.1.Ea\ndivision\n1.A.1.Ea Caribbeo-Mesoamerican Dry Forest\n\n\n1.A.1.Ei\ndivision\n1.A.1.Ei Colombian-Venezuelan Dry Forest\n\n\n1.A.1.Ej\ndivision\n1.A.1.Ej Guianan Dry Forest\n\n\n1.A.1.Ek\ndivision\n1.A.1.Ek Brazilian-Parana Dry Forest\n\n\n1.A.1.El\ndivision\n1.A.1.El Tropical Andean Montane Dry Forest\n\n\n\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nM134 - Caribbean Coastal Lowland Dry Forest\n\n\n\n\n\n\n1.A.1.Ea Caribbeo-Mesoamerican Dry Forest\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "continental/1.B.3/M663.html#ecosystem-typology",
+    "href": "continental/1.B.3/M663.html#ecosystem-typology",
+    "title": "M663 – Valdivian Temperate Flooded & Swamp Forest",
+    "section": "Ecosystem typology",
+    "text": "Ecosystem typology\nThe description of this macrogroup overlaps with the following vegetation units for Chile (Luebert and Pliscoff 2017):\n\n\n\n\n\n\n\n\n\n\n\nPISO\nID\nMacrogroup code\nEcological System\n\n\n\n\nBosque resinoso templado costero de Pilgerodendron uvifera y Astelia pumila\n82\nM663\n603.183\n\n\nBosque resinoso templado costero de Pilgerodendron uvifera y Tepualia stipularis\n81\nM663\n603.183\n\n\nMatorral arborescente caducifolio templado-antiboreal andino de Nothofagus antarctica y Chiliot\n71\nM663\n603.172\n\n\nMatorral arborescente caducifolio templado de Nothofagus antarctica y Berberis microphylla\n70\nM663\n603.172\n\n\nMatorral caducifolio templado andino de Nothofagus antarctica\n68\nM663\n603.172\n\n\nMatorral caducifolio templado andino de Nothofagus antarctica y Empetrum rubrum\n69\nM663\n603.172\n\n\nMatorral siempreverde templado costero de Pilgerodendron uvifera y Nothofagus nitida\n93\nM663\n603.183\n\n\n\n\n\n\n\nCrosswalk provided by P. Pliscoff, pers. comm. 2016."
+  },
+  {
+    "objectID": "continental/1.B.3/M663.html#ecosystem-classification",
+    "href": "continental/1.B.3/M663.html#ecosystem-classification",
+    "title": "M663 – Valdivian Temperate Flooded & Swamp Forest",
+    "section": "Ecosystem classification",
+    "text": "Ecosystem classification\nThe description of this macrogroup overlaps with the following vegetation units for Chile (Luebert and Pliscoff 2017):\n\n\n\n\n\n\n\n\n\n\n\nPISO\nID\nMacrogroup code\nEcological System\n\n\n\n\nBosque resinoso templado costero de Pilgerodendron uvifera y Astelia pumila\n82\nM663\n603.183\n\n\nBosque resinoso templado costero de Pilgerodendron uvifera y Tepualia stipularis\n81\nM663\n603.183\n\n\nMatorral arborescente caducifolio templado-antiboreal andino de Nothofagus antarctica y Chiliot\n71\nM663\n603.172\n\n\nMatorral arborescente caducifolio templado de Nothofagus antarctica y Berberis microphylla\n70\nM663\n603.172\n\n\nMatorral caducifolio templado andino de Nothofagus antarctica\n68\nM663\n603.172\n\n\nMatorral caducifolio templado andino de Nothofagus antarctica y Empetrum rubrum\n69\nM663\n603.172\n\n\nMatorral siempreverde templado costero de Pilgerodendron uvifera y Nothofagus nitida\n93\nM663\n603.183\n\n\n\n\n\n\n\nCrosswalk provided by P. Pliscoff, pers. comm. 2016.\n\n\n# A tibble: 1 × 5\n  eco_code eco_name                               efg_code biome_code membership\n  &lt;chr&gt;    &lt;chr&gt;                                  &lt;chr&gt;    &lt;chr&gt;           &lt;dbl&gt;\n1 M663     M663 Valdivian Temperate Flooded & Sw… TF1.2    TF1              0.05\n\n\n\n\nCrosswalk provided by Faber Langendoen, pers. comm. 2019."
+  },
+  {
+    "objectID": "continental/1.A.1/M573.html",
+    "href": "continental/1.A.1/M573.html",
+    "title": "M573 – Northern Andes Seasonal Dry Forest",
+    "section": "",
+    "text": "IVC.Name\n1.A.1.El.573 - Northern Andes Seasonal Dry Forest\n\n\nOverall.Category\nNE\n\n\nOverall.Bounds\nNA\n\n\nThreat.criteria\nNA"
+  },
+  {
+    "objectID": "continental/1.A.1/M573.html#description",
+    "href": "continental/1.A.1/M573.html#description",
+    "title": "M573 – Northern Andes Seasonal Dry Forest",
+    "section": "Description",
+    "text": "Description\nDescription of this macrogroup is available at NatureServe Explorer.\nPlease note the changes in code and nomenclature between the version used for the assessment (in this website) and the current values in the NatureServe database.\n\nCharacteristic biota\nThe list of characteristic biota includes 7 plant species:\nFabaceae; Bombacacae; Meliaceae; Bignoniaceae; Burseraceae Euphorbiaceae; Asteraceae; Cactaceae\n\n\nGeographical distribution\nGeospatial vector data for this macrogroup is available from José R. Ferrer-Paris (2024).\nThis macrogroup is present in the following countries and territories:\nColombia; Venezuela; Ecuador; Peru"
+  },
+  {
+    "objectID": "continental/1.A.1/M573.html#ecosystem-classification",
+    "href": "continental/1.A.1/M573.html#ecosystem-classification",
+    "title": "M573 – Northern Andes Seasonal Dry Forest",
+    "section": "Ecosystem classification",
+    "text": "Ecosystem classification\n\n\n\n\n\n\n\n\n\n\n\n\neco_code\neco_name\nefg_code\nbiome_code\nmembership\n\n\n\n\nM573\nM573 Northern Andean Seasonal Dry Forest CO, EC, PE, VE\nT1.2\nT1\n1\n\n\n\n\n\n\n\nCrosswalk provided by Faber Langendoen, pers. comm. 2019."
+  },
+  {
+    "objectID": "continental/1.A.1/M573.html#rle-assessment-2019",
+    "href": "continental/1.A.1/M573.html#rle-assessment-2019",
+    "title": "M573 – Northern Andes Seasonal Dry Forest",
+    "section": "RLE Assessment – 2019",
+    "text": "RLE Assessment – 2019\nThis section summarises the results from José Rafael Ferrer-Paris et al. (2019) for this macrogroup.\n\nValidation of distribution\nPrior to the RLE assessment, the distribution data for this macrogroup was validated with following results:\n\n\n\n\n\n\n\n\n\nFormation\nTropical Seasonally Dry Forest\n\n\nDivision\nTropical Andean Montane Dry Forest\n\n\nMacrogroup code\nM573\n\n\nName\n1.A.1.El.573 - Northern Andes Seasonal Dry Forest\n\n\nLocal\n0.28\n\n\nWithin 5km2\n0.99\n\n\nExpert confidence\nLow\n\n\nBioclimate\n0.643313\n\n\nEcoregion\n0.7883331\n\n\nCharacteristic Biota\n0.2446193\n\n\nLow overlap\n0.7301469\n\n\nHistoric Forest Cover\n0.833975\n\n\nIncluded in analysis\nFALSE\n\n\nNotes\nExcluded due to low expert confidence but moderate scores in consistency test\n\n\n\n\n\n\n\nResults by subcriterion\n\n\n\n\n\nA1\nNE\n\n\nbounds.A1\nNA\n\n\nA2b\nNE\n\n\nbounds.A2b\nNA\n\n\nA3\nNE\n\n\nbounds.A3\nNA\n\n\nB1\nNE\n\n\nB2\nNE\n\n\nB3\nNE\n\n\nC2a\nNE\n\n\nbounds.C2a\nNA\n\n\nC2b\nNE\n\n\nD1\nNE\n\n\nD2b\nNE\n\n\nD3\nNE"
   }
 ]
