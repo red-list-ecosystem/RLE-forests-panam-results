@@ -20,5 +20,27 @@
     "items": [
       "/continental/1.A.1/M134.html"
     ]
+  },
+  {
+    "listing": "/continental-1.A.1/mcdg-list.html",
+    "items": [
+      "/continental-1.A.1/M134.html"
+    ]
+  },
+  {
+    "listing": "/continental-1.B.3/mcdg-list.html",
+    "items": [
+      "/continental-1.B.3/M663.html"
+    ]
+  },
+  {
+    "listing": "/countries-SAM/country-list.html",
+    "items": [
+      "/countries-SAM/Ecuador.html",
+      "/countries-SAM/Colombia.html",
+      "/countries-SAM/Bolivia.html",
+      "/countries-SAM/Chile.html",
+      "/countries-SAM/Paraguay.html"
+    ]
   }
 ]

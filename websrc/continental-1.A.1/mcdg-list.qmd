@@ -1,5 +1,5 @@
 ---
-title: "Tropical Dry Forest & Woodland"
+title: "{{< fa leaf >}} Tropical Dry Forest & Woodland"
 subtitle: "Formation 1.A.1 Tropical Dry Forest & Woodland"
 listing: 
  type: default
@@ -15,7 +15,7 @@ These macrogroups belong to several divisions within the IVC/EcoVeg classificati
 
 ```{r}
 library(dplyr)
-here::i_am("websrc/continental/1.A.1/mcdg-list.qmd")
+here::i_am("websrc/continental-1.A.1/mcdg-list.qmd")
 load(here::here("Rdata/20150130_EcoVeg_hierarchy.rda"))
 load(here::here("Rdata/20181123_MacrogroupsCountry.rda"))
 dcdgs <- Macrogroups.Global |> filter(IVC.formation == "1.A.1") |> pull(IVC.division)

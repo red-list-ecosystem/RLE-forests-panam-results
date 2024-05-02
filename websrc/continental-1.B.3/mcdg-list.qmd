@@ -1,5 +1,5 @@
 ---
-title: "Temperate Flooded & Swamp Forest"
+title: "{{< fa leaf >}} Temperate Flooded & Swamp Forest"
 subtitle: "Formation 1.B.3 Temperate Flooded & Swamp Forest"
 listing: 
  type: default
@@ -18,7 +18,7 @@ These macrogroups belong to several divisions within the IVC/EcoVeg classificati
 ```{r}
 library(dplyr)
 options(knitr.kable.NA = '')
-here::i_am("websrc/continental/1.B.3/mcdg-list.qmd")
+here::i_am("websrc/continental-1.B.3/mcdg-list.qmd")
 load(here::here("Rdata/20150130_EcoVeg_hierarchy.rda"))
 load(here::here("Rdata/20181123_MacrogroupsCountry.rda"))
 dcdgs <- Macrogroups.Global |> filter(IVC.formation == "1.B.3") |> 

@@ -1,7 +1,10 @@
 ---
-title: "M134 - Caribbean Coastal Lowland Dry Forest"
+title: "Valdivian Temperate Flooded & Swamp Forest"
+subtitle: "{{< fa code >}} **1.B.3.Ej.663 or M663**"
 categories:
-  - 1.A.1.Ea Caribbeo-Mesoamerican Dry Forest
+  - 1.B.3.Ej Valdivian
+  - Chile
+  - Argentina
 execute: 
   echo: false
   warning: false
@@ -9,11 +12,11 @@ execute:
 
 ```{r}
 library(dplyr)
-here::i_am("websrc/continental/1.A.1/mcdg-list.qmd")
+here::i_am("websrc/continental-1.B.3/mcdg-list.qmd")
 load(here::here("Rdata/20150130_EcoVeg_hierarchy.rda"))
 load(here::here("Rdata/20181123_MacrogroupsCountry.rda"))
 
-Macrogroups.Global |> filter(IVC.macrogroup_key == "M134") |>
+Macrogroups.Global |> filter(IVC.macrogroup_key == "M663") |>
   select(IVC.Name, Overall.Category, Overall.Bounds, Threat.criteria ) |>
   t() |>
   knitr::kable()
@@ -21,7 +24,7 @@ Macrogroups.Global |> filter(IVC.macrogroup_key == "M134") |>
 
 ## Description
 
-Description of this macrogroup is available at [NatureServe Explorer](https://explorer.natureserve.org/Taxon/ELEMENT_GLOBAL.2.838402/Bursera_simaruba_-_Coccoloba_diversifolia_-_Eugenia_sp_Caribbean_Coastal_Lowland_Dry_Forest_Macrogroup#:~:text=This%20vegetation%20is%20found%20in,canopies%20with%20no%20emergent%20trees.).
+Description of this macrogroup is available at [NatureServe Explorer](https://explorer.natureserve.org/Taxon/ELEMENT_GLOBAL.2.884818/Valdivian_Temperate_Flooded_Swamp_Forest_Macrogroup).
 
 Please note the changes in code and nomenclature between the version used for the assessment (in this website) and the current values in the NatureServe database.
 
@@ -29,10 +32,10 @@ Please note the changes in code and nomenclature between the version used for th
 
 ```{r}
 load(here::here("Rdata/20210807_Macrogroup_characteristic_biota.rda"))
-biota <- characteristic_biota |> filter(mg_key %in% "M134")
+biota <- characteristic_biota |> filter(mg_key %in% "M663")
 ```
 
-The list of characteristic biota includes `r nrow(biota)` plant species, the first 20 are:
+The list of characteristic biota includes `r nrow(biota)` plant species:
 
 ```{r}
 #| results: asis
@@ -44,10 +47,17 @@ biota |> head(20) |> pull(species_name) |>
 
 ### Geographical distribution
 
+Geospatial vector data for this macrogroup is available from @Ferrer-Paris_2024_OSF_vectordata.
+
 This macrogroup is present in the following countries and territories:
 
 ```{r}
-Macrogroups.Country |> filter(IVC.macrogroup_key == "M134") |> pull(Country)
+#| results: asis
+Macrogroups.Country |> 
+  filter(IVC.macrogroup_key == "M663") |> 
+  pull(Country) |>
+  paste(collapse = "; ") |>
+  cat()
 ```
 
 ## RLE Assessment -- 2019 
@@ -61,7 +71,7 @@ Prior to the RLE assessment, the distribution data for this macrogroup was valid
 ```{r}
 load(here::here("Rdata/20210807_Macrogroup_validation_data.rda"))
 full_validation_table |> 
-  filter(`Macrogroup code` %in% "M134") |> 
+  filter(`Macrogroup code` %in% "M663") |> 
   t() |>
   knitr::kable()
   
@@ -72,7 +82,7 @@ full_validation_table |>
 
 ```{r}
 
-Macrogroups.Global |> filter(IVC.macrogroup_key == "M134") |>
+Macrogroups.Global |> filter(IVC.macrogroup_key == "M663") |>
   select(A1:D3) |>
   t() |>
   knitr::kable()

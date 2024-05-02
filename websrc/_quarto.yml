@@ -17,15 +17,17 @@ website:
       - text: "{{< fa landmark >}} Ecosystem classification"
         menu:
           - text: "IVC / EcoVeg"
-            href: continental/ecos.qmd
+            href: continental-ecos.qmd
       - text: "{{< fa leaf >}} Results by formation"
         menu:
           - text: "Tropical dry forest"
-            href: continental/1.A.1/mcdg-list.qmd
+            href: continental-1.A.1/mcdg-list.qmd
+          - text: "Temperate flooded forest"
+            href: continental-1.B.3/mcdg-list.qmd
       - text: "{{< fa globe >}} Results by country"
         menu:
           - text: "South America"
-            href: countries/SAM/country-list.qmd
+            href: countries-SAM/country-list.qmd
     right:
       - text: "How to..."
         icon: question
