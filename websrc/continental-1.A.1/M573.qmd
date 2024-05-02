@@ -1,10 +1,11 @@
 ---
-title: "Valdivian Temperate Flooded & Swamp Forest"
-subtitle: "{{< fa code >}} **1.B.3.Ej.663 or M663**"
+title: "M573 -- Northern Andes Seasonal Dry Forest"
 categories:
-  - 1.B.3.Ej Valdivian
-  - Chile
-  - Argentina
+  - 1.A.1.El Tropical Andean Montane
+  - Colombia
+  - Ecuador
+  - Peru
+  - Venezuela
 execute: 
   echo: false
   warning: false
@@ -14,11 +15,13 @@ editor_options:
 
 ```{r}
 library(dplyr)
-here::i_am("websrc/continental-1.B.3/mcdg-list.qmd")
+here::i_am("websrc/continental/1.A.1/mcdg-list.qmd")
 load(here::here("Rdata/20150130_EcoVeg_hierarchy.rda"))
 load(here::here("Rdata/20181123_MacrogroupsCountry.rda"))
 
-Macrogroups.Global |> filter(IVC.macrogroup_key == "M663") |>
+mg_code <- "M573"
+
+Macrogroups.Global |> filter(IVC.macrogroup_key == mg_code) |>
   select(IVC.Name, Overall.Category, Overall.Bounds, Threat.criteria ) |>
   t() |>
   knitr::kable()
@@ -34,7 +37,7 @@ Please note the changes in code and nomenclature between the version used for th
 
 ```{r}
 load(here::here("Rdata/20210807_Macrogroup_characteristic_biota.rda"))
-biota <- characteristic_biota |> filter(mg_key %in% "M663")
+biota <- characteristic_biota |> filter(mg_key %in% mg_code)
 ```
 
 The list of characteristic biota includes `r nrow(biota)` plant species:
@@ -56,7 +59,7 @@ This macrogroup is present in the following countries and territories:
 ```{r}
 #| results: asis
 Macrogroups.Country |> 
-  filter(IVC.macrogroup_key == "M663") |> 
+  filter(IVC.macrogroup_key == mg_code) |> 
   pull(Country) |>
   paste(collapse = "; ") |>
   cat()
@@ -64,26 +67,13 @@ Macrogroups.Country |>
 
 ## Ecosystem classification
 
-The description of this macrogroup overlaps with the following vegetation units for Chile [@federico_luebert_2017_60800]:
+
 
 ```{r}
 ## xwalks
 load(here::here("Rdata/all-xwalks.rda"))
 
-Chile_IVC_xwalk |>
-  filter(`Macrogroup code` == "M663") |>
-  select(PISO, ID,  `Macrogroup code`, `Ecological System`) |>
-  knitr::kable()
-```
-
-::: {.column-margin}
-Crosswalk provided by P. Pliscoff, pers. comm. 2016.
-:::
-
-
-```{r}
-
-IVC_GET_xwalk |> filter(eco_code == "M663") |>
+IVC_GET_xwalk |> filter(eco_code == mg_code) |>
   knitr::kable()
 ```
 
@@ -91,11 +81,6 @@ IVC_GET_xwalk |> filter(eco_code == "M663") |>
 ::: {.column-margin}
 Crosswalk provided by Faber Langendoen, pers. comm. 2019.
 :::
-
-
-```{r}
-chile_xwalk |> filter(eco_code %in% (c(82,81,70,68,69,93)-2))
-```
 
 
 ## RLE Assessment -- 2019 
@@ -109,7 +94,7 @@ Prior to the RLE assessment, the distribution data for this macrogroup was valid
 ```{r}
 load(here::here("Rdata/20210807_Macrogroup_validation_data.rda"))
 full_validation_table |> 
-  filter(`Macrogroup code` %in% "M663") |> 
+  filter(`Macrogroup code` %in% mg_code) |> 
   t() |>
   knitr::kable()
   
@@ -120,7 +105,7 @@ full_validation_table |>
 
 ```{r}
 
-Macrogroups.Global |> filter(IVC.macrogroup_key == "M663") |>
+Macrogroups.Global |> filter(IVC.macrogroup_key == mg_code) |>
   select(A1:D3) |>
   t() |>
   knitr::kable()

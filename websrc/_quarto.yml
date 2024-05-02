@@ -21,9 +21,15 @@ website:
       - text: "{{< fa leaf >}} Results by formation"
         menu:
           - text: "Tropical dry forest"
+<<<<<<< HEAD
             href: continental-1.A.1/mcdg-list.qmd
           - text: "Temperate flooded forest"
             href: continental-1.B.3/mcdg-list.qmd
+=======
+            href: continental/1.A.1/mcdg-list.qmd
+          - text: "Temperate flooded forest"
+            href: continental/1.B.3/mcdg-list.qmd
+>>>>>>> 5fe978e37a86c8b8634434af824b2cd7836f2f41
       - text: "{{< fa globe >}} Results by country"
         menu:
           - text: "South America"
