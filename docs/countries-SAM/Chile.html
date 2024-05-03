@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -177,7 +211,23 @@ div.csl-indent {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#national-vegetation-map" id="toc-national-vegetation-map" class="nav-link active" data-scroll-target="#national-vegetation-map">National vegetation map</a></li>
+  <li><a href="#national-assessment" id="toc-national-assessment" class="nav-link" data-scroll-target="#national-assessment">National assessment</a>
+  <ul class="collapse">
+  <li><a href="#download-the-data" id="toc-download-the-data" class="nav-link" data-scroll-target="#download-the-data">Download the data</a></li>
+  <li><a href="#combine-data" id="toc-combine-data" class="nav-link" data-scroll-target="#combine-data">Combine data</a></li>
+  </ul></li>
+  <li><a href="#visualise-risk-categories" id="toc-visualise-risk-categories" class="nav-link" data-scroll-target="#visualise-risk-categories">Visualise risk categories</a>
+  <ul class="collapse">
+  <li><a href="#first-step-create-map-using-gdal_rasterize" id="toc-first-step-create-map-using-gdal_rasterize" class="nav-link" data-scroll-target="#first-step-create-map-using-gdal_rasterize">First step: create map using <code>gdal_rasterize</code></a></li>
+  <li><a href="#second-step-show-map-using-r" id="toc-second-step-show-map-using-r" class="nav-link" data-scroll-target="#second-step-show-map-using-r">Second step: show map using <code>R</code></a></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/red-list-ecosystem/RLE-forests-panam-results/edit/mostly-harmless/countries-SAM/Chile.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/red-list-ecosystem/RLE-forests-panam-results/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -208,13 +258,97 @@ div.csl-indent {
 <p>There are national and subnational assessments available for Chile <span class="citation" data-cites="Pliscoff_2019 Alaniz_2021">(<a href="#ref-Pliscoff_2019" role="doc-biblioref">Pliscoff, Simonetti, and Asmüssen 2019</a>; <a href="#ref-Alaniz_2021" role="doc-biblioref">Alaniz et al. 2021</a>)</span>.</p>
 <p>An update of the national assessment is currently underway.</p>
 <p>Results from the continental assessment should only be used for academic purposes.</p>
+<section id="national-vegetation-map" class="level2">
+<h2 class="anchored" data-anchor-id="national-vegetation-map">National vegetation map</h2>
+<p>For Chile the current version of the map used for the national RLE assessment is available in Zenodo at <a href="https://zenodo.org/records/60800" class="uri">https://zenodo.org/records/60800</a> <span class="citation" data-cites="federico_luebert_2017_60800">(<a href="#ref-federico_luebert_2017_60800" role="doc-biblioref">Luebert and Pliscoff 2017</a>)</span>.</p>
+</section>
+<section id="national-assessment" class="level2">
+<h2 class="anchored" data-anchor-id="national-assessment">National assessment</h2>
+<section id="download-the-data" class="level3">
+<h3 class="anchored" data-anchor-id="download-the-data">Download the data</h3>
+<p>The repository includes several compressed shapefiles and csv files with additional tabular data (check file shape_pisos.zip), and it also includes a csv file with the IUCN RLE results.</p>
+<p>We first download and uncompress the shapefile with the vegetion units <code>shape_pisos</code>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> <span class="st">'https://zenodo.org/record/60800/files/shape_pisos.zip?download=1'</span> <span class="dt">\</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">-O</span> shape_pisos.zip</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">unzip</span> <span class="at">-u</span> shape_pisos.zip</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Then we download the csv file with the conservation status:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">wget</span> https://zenodo.org/record/60800/files/estado_conservacion.csv<span class="pp">?</span>download=1 <span class="dt">\</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">-O</span> estado_conservacion.csv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="combine-data" class="level3">
+<h3 class="anchored" data-anchor-id="combine-data">Combine data</h3>
+<p>We need to combine the new table with the attribute table of the shapefile. One option is to use the functions in the <code>gdal</code> library to perform a <code>join</code> operation on the tables:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">ogr2ogr</span> <span class="dt">\</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">-sql</span> <span class="st">"select CODIGO, PISO, FORMACION, Evaluación_Final from shape_pisos</span><span class="dt">\</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="st">         left join 'estado_conservacion.csv'.estado_conservacion </span><span class="dt">\</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="st">         on shape_pisos.CODIGO = estado_conservacion.Código_Piso"</span> <span class="dt">\ </span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="ex">Chile-RLE.gpkg</span> shape_pisos.shp <span class="at">-nlt</span> MULTIPOLYGON</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="visualise-risk-categories" class="level2">
+<h2 class="anchored" data-anchor-id="visualise-risk-categories">Visualise risk categories</h2>
+<section id="first-step-create-map-using-gdal_rasterize" class="level3">
+<h3 class="anchored" data-anchor-id="first-step-create-map-using-gdal_rasterize">First step: create map using <code>gdal_rasterize</code></h3>
+<p>We can use other functions in the <code>gdal</code> library to transform the vector file we just created into a raster file with values of 1 to 6 for the RLE categories DD to CR:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode sh code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="va">LAYER</span><span class="op">=</span>shape_pisos</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="va">OGRINPUT</span><span class="op">=</span>Chile-RLE.gpkg</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="va">GDALOUTPUT</span><span class="op">=</span>RLE-Chile-cat.tif </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="va">CATCOLUMN</span><span class="op">=</span>Evaluación_Final</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="ex">gdal_rasterize</span> <span class="at">-burn</span> 0 <span class="at">-ts</span> 500 1500 <span class="at">-l</span> <span class="va">$LAYER</span> <span class="va">$OGRINPUT</span> <span class="va">$GDALOUTPUT</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="ex">gdal_rasterize</span> <span class="at">-burn</span> 1 <span class="at">-where</span> <span class="st">"</span><span class="va">$CATCOLUMN</span><span class="st">='DD'"</span> <span class="at">-l</span> <span class="va">$LAYER</span> <span class="va">$OGRINPUT</span> <span class="va">$GDALOUTPUT</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="ex">gdal_rasterize</span> <span class="at">-burn</span> 2 <span class="at">-where</span> <span class="st">"</span><span class="va">$CATCOLUMN</span><span class="st">='LC'"</span> <span class="at">-l</span> <span class="va">$LAYER</span> <span class="va">$OGRINPUT</span> <span class="va">$GDALOUTPUT</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="ex">gdal_rasterize</span> <span class="at">-burn</span> 3 <span class="at">-where</span> <span class="st">"</span><span class="va">$CATCOLUMN</span><span class="st">='NT'"</span> <span class="at">-l</span> <span class="va">$LAYER</span> <span class="va">$OGRINPUT</span> <span class="va">$GDALOUTPUT</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="ex">gdal_rasterize</span> <span class="at">-burn</span> 4 <span class="at">-where</span> <span class="st">"</span><span class="va">$CATCOLUMN</span><span class="st">='VU'"</span> <span class="at">-l</span> <span class="va">$LAYER</span> <span class="va">$OGRINPUT</span> <span class="va">$GDALOUTPUT</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="ex">gdal_rasterize</span> <span class="at">-burn</span> 5 <span class="at">-where</span> <span class="st">"</span><span class="va">$CATCOLUMN</span><span class="st">='EN'"</span> <span class="at">-l</span> <span class="va">$LAYER</span> <span class="va">$OGRINPUT</span> <span class="va">$GDALOUTPUT</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="ex">gdal_rasterize</span> <span class="at">-burn</span> 6 <span class="at">-where</span> <span class="st">"</span><span class="va">$CATCOLUMN</span><span class="st">='CR'"</span> <span class="at">-l</span> <span class="va">$LAYER</span> <span class="va">$OGRINPUT</span> <span class="va">$GDALOUTPUT</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="second-step-show-map-using-r" class="level3">
+<h3 class="anchored" data-anchor-id="second-step-show-map-using-r">Second step: show map using <code>R</code></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>here<span class="sc">::</span><span class="fu">i_am</span>(<span class="st">"systematic-assessments/Chile.qmd"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>data_folder <span class="ot">&lt;-</span> <span class="st">"Data"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(terra)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyterra)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="do">## country boundaries (World Bank source)</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>WB_file <span class="ot">&lt;-</span> here<span class="sc">::</span><span class="fu">here</span>(data_folder,</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">"WB_Boundaries_GeoJSON_lowres/WB_countries_Admin0_lowres.geojson"</span>)</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>CHL_pol <span class="ot">&lt;-</span> <span class="fu">vect</span>(sf<span class="sc">::</span><span class="fu">read_sf</span>(WB_file)) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">filter</span>(ISO_A3 <span class="sc">%in%</span> <span class="st">"CHL"</span>)</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>clrs <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">"NE"</span> <span class="ot">=</span> <span class="st">"white"</span>,</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  <span class="st">"DD"</span> <span class="ot">=</span> <span class="st">"grey"</span>,</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  <span class="st">"LC"</span> <span class="ot">=</span> <span class="st">"green4"</span>,</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="st">"NT"</span> <span class="ot">=</span> <span class="st">"green"</span>,</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>  <span class="st">"VU"</span> <span class="ot">=</span> <span class="st">"yellow"</span>,</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>  <span class="st">"EN"</span> <span class="ot">=</span> <span class="st">"orange"</span>,</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>  <span class="st">"CR"</span> <span class="ot">=</span> <span class="st">"red"</span>)</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>CHL <span class="ot">&lt;-</span> <span class="fu">rast</span>(here<span class="sc">::</span><span class="fu">here</span>(data_folder, <span class="st">"RLE-Chile-cat.tif"</span>))</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(CHL) <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">val=</span><span class="dv">0</span><span class="sc">:</span><span class="dv">6</span>,<span class="at">cat=</span><span class="fu">c</span>(<span class="st">"NE"</span>,<span class="st">"DD"</span>,<span class="st">"LC"</span>,<span class="st">"NT"</span>,<span class="st">"VU"</span>,<span class="st">"EN"</span>,<span class="st">"CR"</span>))</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(CHL, <span class="at">col=</span>clrs[<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>)], </span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">main =</span> CHL_pol<span class="sc">$</span>FORMAL_EN, </span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">legend =</span> <span class="cn">TRUE</span>, <span class="at">axes =</span> <span class="cn">TRUE</span>,)</span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(CHL_pol, <span class="at">add =</span> T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Compare this with published maps, for example <a href="https://sinia.mma.gob.cl/wp-content/uploads/2021/04/7-biodiversidad.pdf">this one</a>.</p>
 
 
 
+</section>
+</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
 <div id="ref-Alaniz_2021" class="csl-entry" role="listitem">
 Alaniz, Alberto J., Pablo M. Vergara, Mario A. Carvajal, and Andrés Fierro. 2021. <span>“Recent Rapid Colonization of the Invasive Species Bagrada Hilaris (Heteroptera: Pentatomidae) in the Collapsed Ecosystem Aculeo Lake, Chile.”</span> <em>International Journal of Pest Management</em> 69 (3): 241–47. <a href="https://doi.org/10.1080/09670874.2021.1915512">https://doi.org/10.1080/09670874.2021.1915512</a>.
+</div>
+<div id="ref-federico_luebert_2017_60800" class="csl-entry" role="listitem">
+Luebert, Federico, and Patricio Pliscoff. 2017. <span>“<span class="nocase">Sinopsis bioclimática y vegetacional de Chile / Bioclimatic and vegetational synopsis of Chile</span>.”</span> Editorial Universitaria. <a href="https://doi.org/10.5281/zenodo.60800">https://doi.org/10.5281/zenodo.60800</a>.
 </div>
 <div id="ref-Pliscoff_2019" class="csl-entry" role="listitem">
 Pliscoff, Patricio, J. Simonetti, and M. Asmüssen. 2019. <span>“Protocolo Para La Evaluación Del Riesgo de Colapso de Los Ecosistemas: Caso de Estudio Del Bosque Espinoso (Espinal) En La Zona Central de Chile.”</span> <em>Revista de Geografía Norte Grande</em> 73: 29–56. <a href="https://doi.org/10.4067/s0718-34022019000200029">https://doi.org/10.4067/s0718-34022019000200029</a>.
@@ -612,4 +746,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/red-list-ecosystem/RLE-forests-panam-results/edit/mostly-harmless/countries-SAM/Chile.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/red-list-ecosystem/RLE-forests-panam-results/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/red-list-ecosystem/RLE-forests-panam-results/edit/mostly-harmless/countries-SAM/Chile.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/red-list-ecosystem/RLE-forests-panam-results/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

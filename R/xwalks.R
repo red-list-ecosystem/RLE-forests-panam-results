@@ -80,4 +80,4 @@ chile_xwalk <- xwalk |>
 
 
 
-save(file = here::here("Rdata", "all-xwalks.rda"), IVC_GET_xwalk, Chile_IVC_xwalk)
+save(file = here::here("Rdata", "all-xwalks.rda"), IVC_GET_xwalk, Chile_IVC_xwalk, chile_xwalk)

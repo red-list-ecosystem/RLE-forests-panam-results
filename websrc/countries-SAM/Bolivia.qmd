@@ -1,5 +1,6 @@
 ---
-title: "Bolivia"
+title: "{{< fa map >}} Bolivia"
+date: 3 May 2024
 categories:
   - National ecosystem map
   - RLE in progress

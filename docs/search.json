@@ -1,59 +1,52 @@
 [
   {
-    "objectID": "continental/ecos.html",
-    "href": "continental/ecos.html",
-    "title": "About",
+    "objectID": "continental-1.A.1/M573.html",
+    "href": "continental-1.A.1/M573.html",
+    "title": "M573 – Northern Andes Seasonal Dry Forest",
     "section": "",
-    "text": "About this site"
+    "text": "IVC.Name\n1.A.1.El.573 - Northern Andes Seasonal Dry Forest\n\n\nOverall.Category\nNE\n\n\nOverall.Bounds\nNA\n\n\nThreat.criteria\nNA"
   },
   {
-    "objectID": "continental/1.A.1/M134.html",
-    "href": "continental/1.A.1/M134.html",
-    "title": "M134 - Caribbean Coastal Lowland Dry Forest",
+    "objectID": "continental-1.A.1/M573.html#description",
+    "href": "continental-1.A.1/M573.html#description",
+    "title": "M573 – Northern Andes Seasonal Dry Forest",
+    "section": "Description",
+    "text": "Description\nDescription of this macrogroup is available at NatureServe Explorer.\nPlease note the changes in code and nomenclature between the version used for the assessment (in this website) and the current values in the NatureServe database.\n\nCharacteristic biota\nThe list of characteristic biota includes 7 plant species:\nFabaceae; Bombacacae; Meliaceae; Bignoniaceae; Burseraceae Euphorbiaceae; Asteraceae; Cactaceae\n\n\nGeographical distribution\nGeospatial vector data for this macrogroup is available from José R. Ferrer-Paris (2024).\nThis macrogroup is present in the following countries and territories:\nColombia; Venezuela; Ecuador; Peru"
+  },
+  {
+    "objectID": "continental-1.A.1/M573.html#ecosystem-classification",
+    "href": "continental-1.A.1/M573.html#ecosystem-classification",
+    "title": "M573 – Northern Andes Seasonal Dry Forest",
+    "section": "Ecosystem classification",
+    "text": "Ecosystem classification\n\n\n\n\n\n\n\n\n\n\n\n\neco_code\neco_name\nefg_code\nbiome_code\nmembership\n\n\n\n\nM573\nM573 Northern Andean Seasonal Dry Forest CO, EC, PE, VE\nT1.2\nT1\n1\n\n\n\n\n\n\n\nCrosswalk provided by Faber Langendoen, pers. comm. 2019."
+  },
+  {
+    "objectID": "continental-1.A.1/M573.html#rle-assessment-2019",
+    "href": "continental-1.A.1/M573.html#rle-assessment-2019",
+    "title": "M573 – Northern Andes Seasonal Dry Forest",
+    "section": "RLE Assessment – 2019",
+    "text": "RLE Assessment – 2019\nThis section summarises the results from José Rafael Ferrer-Paris et al. (2019) for this macrogroup.\n\nValidation of distribution\nPrior to the RLE assessment, the distribution data for this macrogroup was validated with following results:\n\n\n\n\n\n\n\n\n\nFormation\nTropical Seasonally Dry Forest\n\n\nDivision\nTropical Andean Montane Dry Forest\n\n\nMacrogroup code\nM573\n\n\nName\n1.A.1.El.573 - Northern Andes Seasonal Dry Forest\n\n\nLocal\n0.28\n\n\nWithin 5km2\n0.99\n\n\nExpert confidence\nLow\n\n\nBioclimate\n0.643313\n\n\nEcoregion\n0.7883331\n\n\nCharacteristic Biota\n0.2446193\n\n\nLow overlap\n0.7301469\n\n\nHistoric Forest Cover\n0.833975\n\n\nIncluded in analysis\nFALSE\n\n\nNotes\nExcluded due to low expert confidence but moderate scores in consistency test\n\n\n\n\n\n\n\nResults by subcriterion\n\n\n\n\n\nA1\nNE\n\n\nbounds.A1\nNA\n\n\nA2b\nNE\n\n\nbounds.A2b\nNA\n\n\nA3\nNE\n\n\nbounds.A3\nNA\n\n\nB1\nNE\n\n\nB2\nNE\n\n\nB3\nNE\n\n\nC2a\nNE\n\n\nbounds.C2a\nNA\n\n\nC2b\nNE\n\n\nD1\nNE\n\n\nD2b\nNE\n\n\nD3\nNE"
+  },
+  {
+    "objectID": "continental-1.A.1/M134.html",
+    "href": "continental-1.A.1/M134.html",
+    "title": "Caribbean Coastal Lowland Dry Forest",
     "section": "",
     "text": "IVC.Name\n1.A.1.Ea.134 - Caribbean Coastal Lowland Dry Forest\n\n\nOverall.Category\nEN\n\n\nOverall.Bounds\nEN – CR\n\n\nThreat.criteria\nA1, A3, D2b"
   },
   {
-    "objectID": "continental/1.A.1/M134.html#description",
-    "href": "continental/1.A.1/M134.html#description",
-    "title": "M134 - Caribbean Coastal Lowland Dry Forest",
+    "objectID": "continental-1.A.1/M134.html#description",
+    "href": "continental-1.A.1/M134.html#description",
+    "title": "Caribbean Coastal Lowland Dry Forest",
     "section": "Description",
     "text": "Description\nDescription of this macrogroup is available at NatureServe Explorer.\nPlease note the changes in code and nomenclature between the version used for the assessment (in this website) and the current values in the NatureServe database.\n\nCharacteristic biota\nThe list of characteristic biota includes 176 plant species, the first 20 are:\nSabal palmetto; Pisonia albida; Simarouba glauca; Bursera simaruba; Guaiacum officinale; Coccoloba diversifolia; Coccoloba krugii; Gymnanthes lucida; Guapira discolor; Haematoxylum campechianum; Eugenia axillaris; Savia sessiliflora; Amyris elemifera; Guettarda krugii; Krugiodendron ferreum; Thouinia striata var. portoricensis; Guaiacum sanctum; Ardisia escallonoides; Erithalis fruticosa; Bucida buceras\n\n\nGeographical distribution\nThis macrogroup is present in the following countries and territories:\n\n\n [1] \"Virgin Islands\"                    \"United States\"                    \n [3] \"Turks and Caicas Islands\"          \"Trinidad and Tobago\"              \n [5] \"Sint Maarten\"                      \"Saint Vincent and the Grenadines\" \n [7] \"Saint Martin\"                      \"Saint Lucia\"                      \n [9] \"Saint Kitts and Nevis\"             \"Saint Barthélemy\"                 \n[11] \"Puerto Rico\"                       \"Montserrat\"                       \n[13] \"Martinique\"                        \"Jamaica\"                          \n[15] \"Haiti\"                             \"Guadeloupe\"                       \n[17] \"Grenada\"                           \"Dominican Republic\"               \n[19] \"Dominica\"                          \"Cuba\"                             \n[21] \"Cayman Islands\"                    \"British Virgin Islands\"           \n[23] \"Bonaire, Saint Eustatius and Saba\" \"Barbados\"                         \n[25] \"Bahamas\"                           \"Antigua and Barbuda\"              \n[27] \"Anguilla\""
   },
   {
-    "objectID": "continental/1.A.1/M134.html#rle-assessment-2019",
-    "href": "continental/1.A.1/M134.html#rle-assessment-2019",
-    "title": "M134 - Caribbean Coastal Lowland Dry Forest",
+    "objectID": "continental-1.A.1/M134.html#rle-assessment-2019",
+    "href": "continental-1.A.1/M134.html#rle-assessment-2019",
+    "title": "Caribbean Coastal Lowland Dry Forest",
     "section": "RLE Assessment – 2019",
     "text": "RLE Assessment – 2019\nThis section summarises the results from Ferrer-Paris et al. (2019) for this macrogroup.\n\nValidation of distribution\nPrior to the RLE assessment, the distribution data for this macrogroup was validated with following results:\n\n\n\n\n\n\n\n\n\nFormation\nTropical Seasonally Dry Forest\n\n\nDivision\nCaribbeo-Mesoamerican Dry Forest\n\n\nMacrogroup code\nM134\n\n\nName\n1.A.1.Ea.134 - Caribbean Coastal Lowland Dry Forest\n\n\nLocal\nNA\n\n\nWithin 5km2\nNA\n\n\nExpert confidence\nHigh\n\n\nBioclimate\n0.9468397\n\n\nEcoregion\n0.9677689\n\n\nCharacteristic Biota\n0.3737966\n\n\nLow overlap\n0.8953537\n\n\nHistoric Forest Cover\n0.9325056\n\n\nIncluded in analysis\nTRUE\n\n\nNotes\nNo validation field data, but high expert confidence and high scores in validation tests\n\n\n\n\n\n\n\nResults by subcriterion\n\n\n\n\n\nA1\nEN\n\n\nbounds.A1\nLC – EN\n\n\nA2b\nLC\n\n\nbounds.A2b\nNA\n\n\nA3\nEN\n\n\nbounds.A3\nVU – CR\n\n\nB1\nLC\n\n\nB2\nLC\n\n\nB3\nLC\n\n\nC2a\nDD\n\n\nbounds.C2a\nNA\n\n\nC2b\nNE\n\n\nD1\nLC\n\n\nD2b\nEN\n\n\nD3\nLC"
-  },
-  {
-    "objectID": "continental/1.B.3/mcdg-list.html",
-    "href": "continental/1.B.3/mcdg-list.html",
-    "title": "Temperate Flooded & Swamp Forest",
-    "section": "",
-    "text": "These macrogroups belong to several divisions within the IVC/EcoVeg classification hierarchy:\n\n\n\n\n\n\n\n\n\n\nlevel\nname\nNr. of Macrogroups\n\n\n\n\nclass\n1 Forest & Woodland\n\n\n\nsubclass\n1.B Temperate & Boreal Forest & Woodland\n\n\n\nformation\n1.B.3 Temperate Flooded & Swamp Forest\n\n\n\ndivision\n1.B.3.Eh Pampean Temperate Flooded & Swamp Forest\n1\n\n\ndivision\n1.B.3.Ei Chilean Mediterranean Flooded & Swamp Forest\n1\n\n\ndivision\n1.B.3.Ej Valdivian Temperate Flooded & Swamp Forest\n1\n\n\ndivision\n1.B.3.Ek Northern Patagonian Flooded Forest\n1\n\n\ndivision\n1.B.3.Na Eastern North American & Great Plains Flooded & Swamp Forest\n4\n\n\ndivision\n1.B.3.Nb Southeastern North American Flooded & Swamp Forest\n5\n\n\ndivision\n1.B.3.Nc Rocky Mountain & Great Basin Montane Flooded & Swamp Forest\n1\n\n\ndivision\n1.B.3.Nd Interior Lowland West Flooded & Swamp Forest\n2\n\n\ndivision\n1.B.3.Ng Vancouverian Flooded & Swamp Forest\n1\n\n\n\n\n\nYou can explore a selection of these macrogroups in the following listing.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nM663 – Valdivian Temperate Flooded & Swamp Forest\n\n\n\n\n\n\n1.B.3.Ej Valdivian\n\n\nChile\n\n\nArgentina\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "countries/SAM/country-list.html",
-    "href": "countries/SAM/country-list.html",
-    "title": "South America",
-    "section": "",
-    "text": "The following links include summary of results for selected countries in South America with our comments and recommendations for the use of the data at national level.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nEcuador\n\n\n\n\n\n\npartial national RLE\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nColombia\n\n\n\n\n\n\nNational ecosystem map\n\n\nNational RLE\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBolivia\n\n\n\n\n\n\nNational ecosystem map\n\n\nRLE in progress\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChile\n\n\n\n\n\n\nNational ecosystem map\n\n\nNational RLE\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParaguay\n\n\n\n\n\n\nRLE workshop\n\n\nRLE in progress\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "countries/SAM/Bolivia.html",
-    "href": "countries/SAM/Bolivia.html",
-    "title": "Bolivia",
-    "section": "",
-    "text": "There are subnational assessments for Bolivia (Maillard 2018).\nThere are interested organisations planning to do RLE assessments in Bolivia.\nLocal organisations should be contacted to enquire about the status of RLE assessments in the country.\nResults from the continental assessment can be used for academic purposes. The results for this country should be considered preliminary until national assessments are completed, and should not be used for conservation planning and action without proper national level validation and consultation with relevant stakeholders.\n\n\n\n\nReferences\n\nMaillard, Ruth AND Vides-Almonacid, Oswaldo AND Anívarro. 2018. “Estado de conservación de los ecosistemas de las serranías chiquitanas: Un caso de estudio de la Lista Roja de Ecosistemas de la UICN en Bolivia.” Ecología En Bolivia 53 (September): 128–49. http://www.scielo.org.bo/scielo.php?script=sci_arttext&pid=S1605-25282018000200005&nrm=iso."
-  },
-  {
-    "objectID": "countries/SAM/Ecuador.html",
-    "href": "countries/SAM/Ecuador.html",
-    "title": "Ecuador",
-    "section": "",
-    "text": "There is a partial national assessments for the forests of Ecuador (Noh et al. 2020).\nThere are interested organisations planning to do more RLE assessments in Ecuador.\nLocal organisations should be contacted to inquire about the status of RLE assessments in the country.\nResults from the continental assessment can be used for academic purposes. The results for this country should be compared with any existing national assessments, and should not be used for conservation planning and action without proper national level validation and consultation with relevant stakeholders.\n\n\n\n\nReferences\n\nNoh, Jin Kyoung, Cristian Echeverria, Janina Kleemann, Hongmi Koo, Christine Fürst, and Pablo Cuenca. 2020. “Warning about Conservation Status of Forest Ecosystems in Tropical Andes: National Assessment Based on IUCN Criteria.” Edited by Rodolfo Nóbrega. PLOS ONE 15 (8): e0237877. https://doi.org/10.1371/journal.pone.0237877."
   },
   {
     "objectID": "index.html",
@@ -61,6 +54,41 @@
     "title": "IUCN Red List of Ecosystem for the forest of the Americas",
     "section": "",
     "text": "This website provides a summary and update of the results from the IUCN Red List of Ecosystem (RLE) assessment for the tropical and temperate forests macrogroups of the Americas.\nThe original assessment and analysis was published by Ferrer-Paris et al. (2019).\nThe continental-scale assessment was a flagship project of the IUCN Red List of Ecosystem Thematic group and is used as an example for many other applications of the RLE (Bland et al. 2019; Nicholson et al. 2024). There is a critical need to update and improve the assessment as new information is available and make sure future users are aware of the caveats of this assessment and that they are able to use the best available data and results for decision making and reporting.\nAn official summary of the original assessment is available on-line, and the original results dataset (Rdata format) is available at:\n\nFerrer-Paris, José R. (2018): IUCN Red List of Ecosystem assessment results for IVC Forest Macrogroups in the Americas region. figshare. Dataset. https://doi.org/10.6084/m9.figshare.7488872.v1\n\nOutput of this dataset was also used to illustrate the application of Ecosystem indices in Rowland et al. (2019).\n\n\n\n\nReferences\n\nBland, Lucie M., Emily Nicholson, Rebecca M. Miller, Angela Andrade, Aurélien Carré, Andres Etter, José Rafael Ferrer-Paris, et al. 2019. “Impacts of the IUCN Red List of Ecosystems on Conservation Policy and Practice.” Conservation Letters 12 (5): e12666. https://doi.org/10.1111/conl.12666.\n\n\nFerrer-Paris, José Rafael, Irene Zager, David A. Keith, María A. Oliveira-Miranda, Jon Paul Rodríguez, Carmen Josse, Mario González-Gil, Rebecca M. Miller, Carlos Zambrana-Torrelio, and Edmund Barrow. 2019. “An Ecosystem Risk Assessment of Temperate and Tropical Forests of the Americas with an Outlook on Future Conservation Strategies.” Conservation Letters 12 (2): e12623. https://doi.org/10.1111/conl.12623.\n\n\nNicholson, Emily, Angela Andrade, Amanda Driver, José R Ferrer-Paris, David Keith, Michael Sievers, and Simone Stevenson. 2024. “Beyond the Headline: Roles of the Red List of Ecosystems in Implementing the Kunming-Montreal Global Biodiversity Framework.” Nature Ecology and Evolution. https://doi.org/10.1038/s41559-023-02320-5.\n\n\nRowland, Jessica A., Lucie M. Bland, David A. Keith, Diego Juffe-Bignoli, Mark A. Burgman, Andres Etter, José Rafael Ferrer-Paris, Rebecca M. Miller, Andrew L. Skowno, and Emily Nicholson. 2019. “Ecosystem Indices to Support Global Biodiversity Conservation.” Conservation Letters 13 (1). https://doi.org/10.1111/conl.12680."
+  },
+  {
+    "objectID": "continental-1.B.3/mcdg-list.html",
+    "href": "continental-1.B.3/mcdg-list.html",
+    "title": "Temperate Flooded & Swamp Forest",
+    "section": "",
+    "text": "These macrogroups belong to several divisions within the IVC/EcoVeg classification hierarchy:\n\n\n\n\n\n\n\n\n\n\nlevel\nname\nNr. of Macrogroups\n\n\n\n\nclass\n1 Forest & Woodland\n\n\n\nsubclass\n1.B Temperate & Boreal Forest & Woodland\n\n\n\nformation\n1.B.3 Temperate Flooded & Swamp Forest\n\n\n\ndivision\n1.B.3.Eh Pampean Temperate Flooded & Swamp Forest\n1\n\n\ndivision\n1.B.3.Ei Chilean Mediterranean Flooded & Swamp Forest\n1\n\n\ndivision\n1.B.3.Ej Valdivian Temperate Flooded & Swamp Forest\n1\n\n\ndivision\n1.B.3.Ek Northern Patagonian Flooded Forest\n1\n\n\ndivision\n1.B.3.Na Eastern North American & Great Plains Flooded & Swamp Forest\n4\n\n\ndivision\n1.B.3.Nb Southeastern North American Flooded & Swamp Forest\n5\n\n\ndivision\n1.B.3.Nc Rocky Mountain & Great Basin Montane Flooded & Swamp Forest\n1\n\n\ndivision\n1.B.3.Nd Interior Lowland West Flooded & Swamp Forest\n2\n\n\ndivision\n1.B.3.Ng Vancouverian Flooded & Swamp Forest\n1\n\n\n\n\n\nYou can explore a selection of these macrogroups in the following listing.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nValdivian Temperate Flooded & Swamp Forest\n\n\n1.B.3.Ej.663 or M663\n\n\n\n1.B.3.Ej Valdivian\n\n\nChile\n\n\nArgentina\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "countries-SAM/country-list.html",
+    "href": "countries-SAM/country-list.html",
+    "title": " South America",
+    "section": "",
+    "text": "The following links include summary of results for selected countries in South America with our comments and recommendations for the use of the data at national level.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\n \n\n\nEcuador\n\n\n \n\n\n\n\n \n\n\nChile\n\n\n \n\n\n\n\nMay 3, 2024\n\n\nColombia\n\n\n \n\n\n\n\nMay 3, 2024\n\n\nBolivia\n\n\n \n\n\n\n\nMay 3, 2024\n\n\nParaguay\n\n\n \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "countries-SAM/Bolivia.html",
+    "href": "countries-SAM/Bolivia.html",
+    "title": " Bolivia",
+    "section": "",
+    "text": "There are subnational assessments for Bolivia (Maillard 2018).\nThere are interested organisations planning to do RLE assessments in Bolivia.\nLocal organisations should be contacted to enquire about the status of RLE assessments in the country.\nResults from the continental assessment can be used for academic purposes. The results for this country should be considered preliminary until national assessments are completed, and should not be used for conservation planning and action without proper national level validation and consultation with relevant stakeholders.\n\n\n\n\nReferences\n\nMaillard, Ruth AND Vides-Almonacid, Oswaldo AND Anívarro. 2018. “Estado de conservación de los ecosistemas de las serranías chiquitanas: Un caso de estudio de la Lista Roja de Ecosistemas de la UICN en Bolivia.” Ecología En Bolivia 53 (September): 128–49. http://www.scielo.org.bo/scielo.php?script=sci_arttext&pid=S1605-25282018000200005&nrm=iso."
+  },
+  {
+    "objectID": "countries-SAM/Ecuador.html",
+    "href": "countries-SAM/Ecuador.html",
+    "title": " Ecuador",
+    "section": "",
+    "text": "There is a partial national assessments for the forests of Ecuador (Noh et al. 2020).\nThere are interested organisations planning to do more RLE assessments in Ecuador.\nLocal organisations should be contacted to inquire about the status of RLE assessments in the country.\nResults from the continental assessment can be used for academic purposes. The results for this country should be compared with any existing national assessments, and should not be used for conservation planning and action without proper national level validation and consultation with relevant stakeholders.\n\n\n\n\nReferences\n\nNoh, Jin Kyoung, Cristian Echeverria, Janina Kleemann, Hongmi Koo, Christine Fürst, and Pablo Cuenca. 2020. “Warning about Conservation Status of Forest Ecosystems in Tropical Andes: National Assessment Based on IUCN Criteria.” Edited by Rodolfo Nóbrega. PLOS ONE 15 (8): e0237877. https://doi.org/10.1371/journal.pone.0237877."
+  },
+  {
+    "objectID": "continental-ecos.html",
+    "href": "continental-ecos.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   },
   {
     "objectID": "notes.html",
@@ -98,68 +126,46 @@
     "text": "Just in case\n\n\n\nStand back, I know regular expressions."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "countries/SAM/Colombia.html",
-    "href": "countries/SAM/Colombia.html",
+    "objectID": "countries-SAM/Colombia.html",
+    "href": "countries-SAM/Colombia.html",
     "title": "Colombia",
     "section": "",
     "text": "There are national and subnational assessments available for Colombia (Etter et al. 2020; Uribe, Luna-Acosta, and Etter 2021; Uribe et al. 2022).\nAn update of the national assessment is currently underway.\nResults from the continental assessment should only be used for academic purposes.\n\n\n\n\nReferences\n\nEtter, Andrés, Angela Andrade, Cara R. Nelson, Juliana Cortés, and Kelly Saavedra. 2020. “Assessing Restoration Priorities for High-Risk Ecosystems: An Application of the IUCN Red List of Ecosystems.” Land Use Policy 99 (December): 104874. https://doi.org/10.1016/j.landusepol.2020.104874.\n\n\nUribe, Edwin S., Andrés Etter, Andrea Luna-Acosta, María Claudia Diazgranados, David Alonso, Luis Chasqui, Adriana Osorno, et al. 2022. “A Comprehensive Threat Analysis to Support the Red List of Marine and Coastal Ecosystems of Colombia.” Frontiers in Marine Science 9 (November). https://doi.org/10.3389/fmars.2022.962044.\n\n\nUribe, Edwin S., Andrea Luna-Acosta, and Andrés Etter. 2021. “Red List of Ecosystems: Risk Assessment of Coral Ecosystems in the Colombian Caribbean.” Ocean &Amp; Coastal Management 199 (January): 105416. https://doi.org/10.1016/j.ocecoaman.2020.105416."
   },
   {
-    "objectID": "countries/SAM/Chile.html",
-    "href": "countries/SAM/Chile.html",
+    "objectID": "countries-SAM/Chile.html",
+    "href": "countries-SAM/Chile.html",
     "title": "Chile",
     "section": "",
-    "text": "There are national and subnational assessments available for Chile (Pliscoff, Simonetti, and Asmüssen 2019; Alaniz et al. 2021).\nAn update of the national assessment is currently underway.\nResults from the continental assessment should only be used for academic purposes.\n\n\n\n\nReferences\n\nAlaniz, Alberto J., Pablo M. Vergara, Mario A. Carvajal, and Andrés Fierro. 2021. “Recent Rapid Colonization of the Invasive Species Bagrada Hilaris (Heteroptera: Pentatomidae) in the Collapsed Ecosystem Aculeo Lake, Chile.” International Journal of Pest Management 69 (3): 241–47. https://doi.org/10.1080/09670874.2021.1915512.\n\n\nPliscoff, Patricio, J. Simonetti, and M. Asmüssen. 2019. “Protocolo Para La Evaluación Del Riesgo de Colapso de Los Ecosistemas: Caso de Estudio Del Bosque Espinoso (Espinal) En La Zona Central de Chile.” Revista de Geografía Norte Grande 73: 29–56. https://doi.org/10.4067/s0718-34022019000200029."
+    "text": "There are national and subnational assessments available for Chile (Pliscoff, Simonetti, and Asmüssen 2019; Alaniz et al. 2021).\nAn update of the national assessment is currently underway.\nResults from the continental assessment should only be used for academic purposes."
   },
   {
-    "objectID": "countries/SAM/Paraguay.html",
-    "href": "countries/SAM/Paraguay.html",
+    "objectID": "countries-SAM/Chile.html#national-vegetation-map",
+    "href": "countries-SAM/Chile.html#national-vegetation-map",
+    "title": "Chile",
+    "section": "National vegetation map",
+    "text": "National vegetation map\nFor Chile the current version of the map used for the national RLE assessment is available in Zenodo at https://zenodo.org/records/60800 (Luebert and Pliscoff 2017)."
+  },
+  {
+    "objectID": "countries-SAM/Chile.html#national-assessment",
+    "href": "countries-SAM/Chile.html#national-assessment",
+    "title": "Chile",
+    "section": "National assessment",
+    "text": "National assessment\n\nDownload the data\nThe repository includes several compressed shapefiles and csv files with additional tabular data (check file shape_pisos.zip), and it also includes a csv file with the IUCN RLE results.\nWe first download and uncompress the shapefile with the vegetion units shape_pisos:\nwget 'https://zenodo.org/record/60800/files/shape_pisos.zip?download=1' \\\n    -O shape_pisos.zip\nunzip -u shape_pisos.zip\nThen we download the csv file with the conservation status:\nwget https://zenodo.org/record/60800/files/estado_conservacion.csv?download=1 \\\n    -O estado_conservacion.csv\n\n\nCombine data\nWe need to combine the new table with the attribute table of the shapefile. One option is to use the functions in the gdal library to perform a join operation on the tables:\nogr2ogr \\\n    -sql \"select CODIGO, PISO, FORMACION, Evaluación_Final from shape_pisos\\\n         left join 'estado_conservacion.csv'.estado_conservacion \\\n         on shape_pisos.CODIGO = estado_conservacion.Código_Piso\" \\ \n    Chile-RLE.gpkg shape_pisos.shp -nlt MULTIPOLYGON"
+  },
+  {
+    "objectID": "countries-SAM/Chile.html#visualise-risk-categories",
+    "href": "countries-SAM/Chile.html#visualise-risk-categories",
+    "title": "Chile",
+    "section": "Visualise risk categories",
+    "text": "Visualise risk categories\n\nFirst step: create map using gdal_rasterize\nWe can use other functions in the gdal library to transform the vector file we just created into a raster file with values of 1 to 6 for the RLE categories DD to CR:\nLAYER=shape_pisos\nOGRINPUT=Chile-RLE.gpkg\nGDALOUTPUT=RLE-Chile-cat.tif \nCATCOLUMN=Evaluación_Final\ngdal_rasterize -burn 0 -ts 500 1500 -l $LAYER $OGRINPUT $GDALOUTPUT\ngdal_rasterize -burn 1 -where \"$CATCOLUMN='DD'\" -l $LAYER $OGRINPUT $GDALOUTPUT\ngdal_rasterize -burn 2 -where \"$CATCOLUMN='LC'\" -l $LAYER $OGRINPUT $GDALOUTPUT\ngdal_rasterize -burn 3 -where \"$CATCOLUMN='NT'\" -l $LAYER $OGRINPUT $GDALOUTPUT\ngdal_rasterize -burn 4 -where \"$CATCOLUMN='VU'\" -l $LAYER $OGRINPUT $GDALOUTPUT\ngdal_rasterize -burn 5 -where \"$CATCOLUMN='EN'\" -l $LAYER $OGRINPUT $GDALOUTPUT\ngdal_rasterize -burn 6 -where \"$CATCOLUMN='CR'\" -l $LAYER $OGRINPUT $GDALOUTPUT\n\n\nSecond step: show map using R\n\nhere::i_am(\"systematic-assessments/Chile.qmd\")\ndata_folder &lt;- \"Data\"\n\nlibrary(terra)\nlibrary(dplyr)\nlibrary(tidyterra)\nlibrary(sf)\n\n## country boundaries (World Bank source)\nWB_file &lt;- here::here(data_folder,\n    \"WB_Boundaries_GeoJSON_lowres/WB_countries_Admin0_lowres.geojson\")\nCHL_pol &lt;- vect(sf::read_sf(WB_file)) %&gt;% \n    filter(ISO_A3 %in% \"CHL\")\n\nclrs &lt;- c(\n  \"NE\" = \"white\",\n  \"DD\" = \"grey\",\n  \"LC\" = \"green4\",\n  \"NT\" = \"green\",\n  \"VU\" = \"yellow\",\n  \"EN\" = \"orange\",\n  \"CR\" = \"red\")\n\nCHL &lt;- rast(here::here(data_folder, \"RLE-Chile-cat.tif\"))\nlevels(CHL) &lt;- data.frame(val=0:6,cat=c(\"NE\",\"DD\",\"LC\",\"NT\",\"VU\",\"EN\",\"CR\"))\n\nplot(CHL, col=clrs[c(1,3,5,6,7)], \n    main = CHL_pol$FORMAL_EN, \n    legend = TRUE, axes = TRUE,)\nplot(CHL_pol, add = T)\n\nCompare this with published maps, for example this one."
+  },
+  {
+    "objectID": "countries-SAM/Paraguay.html",
+    "href": "countries-SAM/Paraguay.html",
     "title": "Paraguay",
     "section": "",
     "text": "There are no national or subnational assessments available for Paraguay.\nRLE training workshops were conducted in Paraguay.\nThere are interested organisations planning to do RLE assessments in Paraguay.\nLocal organisations should be contacted to enquire about the status of RLE assessments in the country.\nResults from the continental assessment can be used for academic purposes. The results for this country should be considered preliminary until national assessments are completed, and should not be used for conservation planning and action without proper national level validation and consultation with relevant stakeholders."
-  },
-  {
-    "objectID": "continental/1.B.3/M663.html",
-    "href": "continental/1.B.3/M663.html",
-    "title": "M663 – Valdivian Temperate Flooded & Swamp Forest",
-    "section": "",
-    "text": "IVC.Name\n1.B.3.Ej.663 - Valdivian Temperate Flooded & Swamp Forest\n\n\nOverall.Category\nLC\n\n\nOverall.Bounds\nNA\n\n\nThreat.criteria\nNA"
-  },
-  {
-    "objectID": "continental/1.B.3/M663.html#description",
-    "href": "continental/1.B.3/M663.html#description",
-    "title": "M663 – Valdivian Temperate Flooded & Swamp Forest",
-    "section": "Description",
-    "text": "Description\nDescription of this macrogroup is available at NatureServe Explorer.\nPlease note the changes in code and nomenclature between the version used for the assessment (in this website) and the current values in the NatureServe database.\n\nCharacteristic biota\nThe list of characteristic biota includes 16 plant species:\nPilgerodenron uviferum; Lepidothamnus fonckii; Tepualia stipularis; Gaimardia australis; Pilgerodendron uviferum; Nothofagus antarctica; Scirpus inundatus; Carex frigida; Sphagnum magellanicum; Myrteola magellanica; Berberis microphylla; Berberis darwinii; Mutisia spinosa; Chusquea culeou; Gunnera magellanica; Eleocharis melanostachys\n\n\nGeographical distribution\nGeospatial vector data for this macrogroup is available from José R. Ferrer-Paris (2024).\nThis macrogroup is present in the following countries and territories:\nChile; Argentina"
-  },
-  {
-    "objectID": "continental/1.B.3/M663.html#rle-assessment-2019",
-    "href": "continental/1.B.3/M663.html#rle-assessment-2019",
-    "title": "M663 – Valdivian Temperate Flooded & Swamp Forest",
-    "section": "RLE Assessment – 2019",
-    "text": "RLE Assessment – 2019\nThis section summarises the results from José Rafael Ferrer-Paris et al. (2019) for this macrogroup.\n\nValidation of distribution\nPrior to the RLE assessment, the distribution data for this macrogroup was validated with following results:\n\n\n\n\n\n\n\n\n\nFormation\nTemperate Flooded & Swamp Forest\n\n\nDivision\nValdivian Temperate Flooded & Swamp Forest\n\n\nMacrogroup code\nM663\n\n\nName\n1.B.3.Ej.663 - Valdivian Temperate Flooded & Swamp Forest\n\n\nLocal\n0.4\n\n\nWithin 5km2\n0.96\n\n\nExpert confidence\nModerate\n\n\nBioclimate\n0.4564201\n\n\nEcoregion\n1\n\n\nCharacteristic Biota\n0.2407204\n\n\nLow overlap\n0.6664834\n\n\nHistoric Forest Cover\n0.463274\n\n\nIncluded in analysis\nTRUE\n\n\nNotes\nNA\n\n\n\n\n\n\n\nResults by subcriterion\n\n\n\n\n\nA1\nLC\n\n\nbounds.A1\nNA\n\n\nA2b\nLC\n\n\nbounds.A2b\nNA\n\n\nA3\nLC\n\n\nbounds.A3\nNA\n\n\nB1\nLC\n\n\nB2\nLC\n\n\nB3\nLC\n\n\nC2a\nDD\n\n\nbounds.C2a\nNA\n\n\nC2b\nLC\n\n\nD1\nLC\n\n\nD2b\nDD\n\n\nD3\nLC"
-  },
-  {
-    "objectID": "continental/1.A.1/mcdg-list.html",
-    "href": "continental/1.A.1/mcdg-list.html",
-    "title": "Tropical Dry Forest & Woodland",
-    "section": "",
-    "text": "These macrogroups belong to several divisions within the IVC/EcoVeg classification hierarchy:\n\n\n\n\n\ncode\nlevel\nname\n\n\n\n\n1\nclass\n1 Forest & Woodland\n\n\n1.A\nsubclass\n1.A Tropical Forest & Woodland\n\n\n1.A.1\nformation\n1.A.1 Tropical Dry Forest & Woodland\n\n\n1.A.1.Ea\ndivision\n1.A.1.Ea Caribbeo-Mesoamerican Dry Forest\n\n\n1.A.1.Ei\ndivision\n1.A.1.Ei Colombian-Venezuelan Dry Forest\n\n\n1.A.1.Ej\ndivision\n1.A.1.Ej Guianan Dry Forest\n\n\n1.A.1.Ek\ndivision\n1.A.1.Ek Brazilian-Parana Dry Forest\n\n\n1.A.1.El\ndivision\n1.A.1.El Tropical Andean Montane Dry Forest\n\n\n\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nM134 - Caribbean Coastal Lowland Dry Forest\n\n\n\n\n\n\n1.A.1.Ea Caribbeo-Mesoamerican Dry Forest\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-<<<<<<< HEAD
-    "objectID": "continental-1.A.1/mcdg-list.html",
-    "href": "continental-1.A.1/mcdg-list.html",
-    "title": " Tropical Dry Forest & Woodland",
-    "section": "",
-    "text": "These macrogroups belong to several divisions within the IVC/EcoVeg classification hierarchy:\n\n\n\n\n\ncode\nlevel\nname\n\n\n\n\n1\nclass\n1 Forest & Woodland\n\n\n1.A\nsubclass\n1.A Tropical Forest & Woodland\n\n\n1.A.1\nformation\n1.A.1 Tropical Dry Forest & Woodland\n\n\n1.A.1.Ea\ndivision\n1.A.1.Ea Caribbeo-Mesoamerican Dry Forest\n\n\n1.A.1.Ei\ndivision\n1.A.1.Ei Colombian-Venezuelan Dry Forest\n\n\n1.A.1.Ej\ndivision\n1.A.1.Ej Guianan Dry Forest\n\n\n1.A.1.Ek\ndivision\n1.A.1.Ek Brazilian-Parana Dry Forest\n\n\n1.A.1.El\ndivision\n1.A.1.El Tropical Andean Montane Dry Forest\n\n\n\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nM134 - Caribbean Coastal Lowland Dry Forest\n\n\n\n\n\n\n1.A.1.Ea Caribbeo-Mesoamerican Dry Forest\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "continental-1.B.3/M663.html",
@@ -176,6 +182,13 @@
     "text": "Description\nDescription of this macrogroup is available at NatureServe Explorer.\nPlease note the changes in code and nomenclature between the version used for the assessment (in this website) and the current values in the NatureServe database.\n\nCharacteristic biota\nThe list of characteristic biota includes 16 plant species:\nPilgerodenron uviferum; Lepidothamnus fonckii; Tepualia stipularis; Gaimardia australis; Pilgerodendron uviferum; Nothofagus antarctica; Scirpus inundatus; Carex frigida; Sphagnum magellanicum; Myrteola magellanica; Berberis microphylla; Berberis darwinii; Mutisia spinosa; Chusquea culeou; Gunnera magellanica; Eleocharis melanostachys\n\n\nGeographical distribution\nGeospatial vector data for this macrogroup is available from José R. Ferrer-Paris (2024).\nThis macrogroup is present in the following countries and territories:\nChile; Argentina"
   },
   {
+    "objectID": "continental-1.B.3/M663.html#ecosystem-classification",
+    "href": "continental-1.B.3/M663.html#ecosystem-classification",
+    "title": "Valdivian Temperate Flooded & Swamp Forest",
+    "section": "Ecosystem classification",
+    "text": "Ecosystem classification\nThe description of this macrogroup overlaps with the following vegetation units for Chile (Luebert and Pliscoff 2017):\n\n\n\n\n\n\n\n\n\n\n\nPISO\nID\nMacrogroup code\nEcological System\n\n\n\n\nBosque resinoso templado costero de Pilgerodendron uvifera y Astelia pumila\n82\nM663\n603.183\n\n\nBosque resinoso templado costero de Pilgerodendron uvifera y Tepualia stipularis\n81\nM663\n603.183\n\n\nMatorral arborescente caducifolio templado-antiboreal andino de Nothofagus antarctica y Chiliot\n71\nM663\n603.172\n\n\nMatorral arborescente caducifolio templado de Nothofagus antarctica y Berberis microphylla\n70\nM663\n603.172\n\n\nMatorral caducifolio templado andino de Nothofagus antarctica\n68\nM663\n603.172\n\n\nMatorral caducifolio templado andino de Nothofagus antarctica y Empetrum rubrum\n69\nM663\n603.172\n\n\nMatorral siempreverde templado costero de Pilgerodendron uvifera y Nothofagus nitida\n93\nM663\n603.183\n\n\n\n\n\n\n\nCrosswalk provided by P. Pliscoff, pers. comm. 2016.\n\n\n\n\n\n\n\n\n\n\n\n\neco_code\neco_name\nefg_code\nbiome_code\nmembership\n\n\n\n\nM663\nM663 Valdivian Temperate Flooded & Swamp Forest AR, CL\nTF1.2\nTF1\n0.05\n\n\n\n\n\n\n\nCrosswalk provided by Faber Langendoen, pers. comm. 2019.\n\n\n# A tibble: 10 × 6\n   eco_code form_name           eco_name          efg_code biome_code membership\n      &lt;dbl&gt; &lt;chr&gt;               &lt;chr&gt;             &lt;chr&gt;    &lt;chr&gt;           &lt;dbl&gt;\n 1       66 Deciduous forest    Andean temperate… T2.3     T2                0.5\n 2       66 Deciduous forest    Andean temperate… T3.3     T3                0.5\n 3       67 Deciduous shrubland Andean temperate… T2.3     T2                0.5\n 4       67 Deciduous shrubland Andean temperate… T3.3     T3                0.5\n 5       68 Deciduous shrubland Andean temperate… T2.3     T2                0.5\n 6       68 Deciduous shrubland Andean temperate… T3.3     T3                0.5\n 7       79 Coniferous forest   Coastal temperat… T2.3     T2                1  \n 8       80 Coniferous forest   Coastal temperat… T2.3     T2                1  \n 9       91 Evergreen forest    Coastal temperat… T2.3     T2                0.9\n10       91 Evergreen forest    Coastal temperat… T2.4     T2                0.1"
+  },
+  {
     "objectID": "continental-1.B.3/M663.html#rle-assessment-2019",
     "href": "continental-1.B.3/M663.html#rle-assessment-2019",
     "title": "Valdivian Temperate Flooded & Swamp Forest",
@@ -183,87 +196,17 @@
     "text": "RLE Assessment – 2019\nThis section summarises the results from José Rafael Ferrer-Paris et al. (2019) for this macrogroup.\n\nValidation of distribution\nPrior to the RLE assessment, the distribution data for this macrogroup was validated with following results:\n\n\n\n\n\n\n\n\n\nFormation\nTemperate Flooded & Swamp Forest\n\n\nDivision\nValdivian Temperate Flooded & Swamp Forest\n\n\nMacrogroup code\nM663\n\n\nName\n1.B.3.Ej.663 - Valdivian Temperate Flooded & Swamp Forest\n\n\nLocal\n0.4\n\n\nWithin 5km2\n0.96\n\n\nExpert confidence\nModerate\n\n\nBioclimate\n0.4564201\n\n\nEcoregion\n1\n\n\nCharacteristic Biota\n0.2407204\n\n\nLow overlap\n0.6664834\n\n\nHistoric Forest Cover\n0.463274\n\n\nIncluded in analysis\nTRUE\n\n\nNotes\nNA\n\n\n\n\n\n\n\nResults by subcriterion\n\n\n\n\n\nA1\nLC\n\n\nbounds.A1\nNA\n\n\nA2b\nLC\n\n\nbounds.A2b\nNA\n\n\nA3\nLC\n\n\nbounds.A3\nNA\n\n\nB1\nLC\n\n\nB2\nLC\n\n\nB3\nLC\n\n\nC2a\nDD\n\n\nbounds.C2a\nNA\n\n\nC2b\nLC\n\n\nD1\nLC\n\n\nD2b\nDD\n\n\nD3\nLC"
   },
   {
-    "objectID": "continental-1.B.3/mcdg-list.html",
-    "href": "continental-1.B.3/mcdg-list.html",
-    "title": " Temperate Flooded & Swamp Forest",
-    "section": "",
-    "text": "These macrogroups belong to several divisions within the IVC/EcoVeg classification hierarchy:\n\n\n\n\n\n\n\n\n\n\nlevel\nname\nNr. of Macrogroups\n\n\n\n\nclass\n1 Forest & Woodland\n\n\n\nsubclass\n1.B Temperate & Boreal Forest & Woodland\n\n\n\nformation\n1.B.3 Temperate Flooded & Swamp Forest\n\n\n\ndivision\n1.B.3.Eh Pampean Temperate Flooded & Swamp Forest\n1\n\n\ndivision\n1.B.3.Ei Chilean Mediterranean Flooded & Swamp Forest\n1\n\n\ndivision\n1.B.3.Ej Valdivian Temperate Flooded & Swamp Forest\n1\n\n\ndivision\n1.B.3.Ek Northern Patagonian Flooded Forest\n1\n\n\ndivision\n1.B.3.Na Eastern North American & Great Plains Flooded & Swamp Forest\n4\n\n\ndivision\n1.B.3.Nb Southeastern North American Flooded & Swamp Forest\n5\n\n\ndivision\n1.B.3.Nc Rocky Mountain & Great Basin Montane Flooded & Swamp Forest\n1\n\n\ndivision\n1.B.3.Nd Interior Lowland West Flooded & Swamp Forest\n2\n\n\ndivision\n1.B.3.Ng Vancouverian Flooded & Swamp Forest\n1\n\n\n\n\n\nYou can explore a selection of these macrogroups in the following listing.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nM663 – Valdivian Temperate Flooded & Swamp Forest\n\n\n\n\n\n\n1.B.3.Ej Valdivian\n\n\nChile\n\n\nArgentina\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "continental-1.A.1/M134.html",
-    "href": "continental-1.A.1/M134.html",
-    "title": "M134 - Caribbean Coastal Lowland Dry Forest",
-    "section": "",
-    "text": "IVC.Name\n1.A.1.Ea.134 - Caribbean Coastal Lowland Dry Forest\n\n\nOverall.Category\nEN\n\n\nOverall.Bounds\nEN – CR\n\n\nThreat.criteria\nA1, A3, D2b"
-  },
-  {
-    "objectID": "continental-1.A.1/M134.html#description",
-    "href": "continental-1.A.1/M134.html#description",
-    "title": "M134 - Caribbean Coastal Lowland Dry Forest",
-    "section": "Description",
-    "text": "Description\nDescription of this macrogroup is available at NatureServe Explorer.\nPlease note the changes in code and nomenclature between the version used for the assessment (in this website) and the current values in the NatureServe database.\n\nCharacteristic biota\nThe list of characteristic biota includes 176 plant species, the first 20 are:\nSabal palmetto; Pisonia albida; Simarouba glauca; Bursera simaruba; Guaiacum officinale; Coccoloba diversifolia; Coccoloba krugii; Gymnanthes lucida; Guapira discolor; Haematoxylum campechianum; Eugenia axillaris; Savia sessiliflora; Amyris elemifera; Guettarda krugii; Krugiodendron ferreum; Thouinia striata var. portoricensis; Guaiacum sanctum; Ardisia escallonoides; Erithalis fruticosa; Bucida buceras\n\n\nGeographical distribution\nThis macrogroup is present in the following countries and territories:\n\n\n [1] \"Virgin Islands\"                    \"United States\"                    \n [3] \"Turks and Caicas Islands\"          \"Trinidad and Tobago\"              \n [5] \"Sint Maarten\"                      \"Saint Vincent and the Grenadines\" \n [7] \"Saint Martin\"                      \"Saint Lucia\"                      \n [9] \"Saint Kitts and Nevis\"             \"Saint Barthélemy\"                 \n[11] \"Puerto Rico\"                       \"Montserrat\"                       \n[13] \"Martinique\"                        \"Jamaica\"                          \n[15] \"Haiti\"                             \"Guadeloupe\"                       \n[17] \"Grenada\"                           \"Dominican Republic\"               \n[19] \"Dominica\"                          \"Cuba\"                             \n[21] \"Cayman Islands\"                    \"British Virgin Islands\"           \n[23] \"Bonaire, Saint Eustatius and Saba\" \"Barbados\"                         \n[25] \"Bahamas\"                           \"Antigua and Barbuda\"              \n[27] \"Anguilla\""
-  },
-  {
-    "objectID": "continental-1.A.1/M134.html#rle-assessment-2019",
-    "href": "continental-1.A.1/M134.html#rle-assessment-2019",
-    "title": "M134 - Caribbean Coastal Lowland Dry Forest",
-    "section": "RLE Assessment – 2019",
-    "text": "RLE Assessment – 2019\nThis section summarises the results from Ferrer-Paris et al. (2019) for this macrogroup.\n\nValidation of distribution\nPrior to the RLE assessment, the distribution data for this macrogroup was validated with following results:\n\n\n\n\n\n\n\n\n\nFormation\nTropical Seasonally Dry Forest\n\n\nDivision\nCaribbeo-Mesoamerican Dry Forest\n\n\nMacrogroup code\nM134\n\n\nName\n1.A.1.Ea.134 - Caribbean Coastal Lowland Dry Forest\n\n\nLocal\nNA\n\n\nWithin 5km2\nNA\n\n\nExpert confidence\nHigh\n\n\nBioclimate\n0.9468397\n\n\nEcoregion\n0.9677689\n\n\nCharacteristic Biota\n0.3737966\n\n\nLow overlap\n0.8953537\n\n\nHistoric Forest Cover\n0.9325056\n\n\nIncluded in analysis\nTRUE\n\n\nNotes\nNo validation field data, but high expert confidence and high scores in validation tests\n\n\n\n\n\n\n\nResults by subcriterion\n\n\n\n\n\nA1\nEN\n\n\nbounds.A1\nLC – EN\n\n\nA2b\nLC\n\n\nbounds.A2b\nNA\n\n\nA3\nEN\n\n\nbounds.A3\nVU – CR\n\n\nB1\nLC\n\n\nB2\nLC\n\n\nB3\nLC\n\n\nC2a\nDD\n\n\nbounds.C2a\nNA\n\n\nC2b\nNE\n\n\nD1\nLC\n\n\nD2b\nEN\n\n\nD3\nLC"
-  },
-  {
-    "objectID": "continental-ecos.html",
-    "href": "continental-ecos.html",
+    "objectID": "about.html",
+    "href": "about.html",
     "title": "About",
     "section": "",
     "text": "About this site"
   },
   {
-    "objectID": "countries-SAM/country-list.html",
-    "href": "countries-SAM/country-list.html",
-    "title": " South America",
+    "objectID": "continental-1.A.1/mcdg-list.html",
+    "href": "continental-1.A.1/mcdg-list.html",
+    "title": " Tropical Dry Forest & Woodland",
     "section": "",
-    "text": "The following links include summary of results for selected countries in South America with our comments and recommendations for the use of the data at national level.\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nEcuador\n\n\n\n\n\n\npartial national RLE\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nColombia\n\n\n\n\n\n\nNational ecosystem map\n\n\nNational RLE\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBolivia\n\n\n\n\n\n\nNational ecosystem map\n\n\nRLE in progress\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChile\n\n\n\n\n\n\nNational ecosystem map\n\n\nNational RLE\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nParaguay\n\n\n\n\n\n\nRLE workshop\n\n\nRLE in progress\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
-=======
-    "objectID": "continental/1.B.3/M663.html#ecosystem-typology",
-    "href": "continental/1.B.3/M663.html#ecosystem-typology",
-    "title": "M663 – Valdivian Temperate Flooded & Swamp Forest",
-    "section": "Ecosystem typology",
-    "text": "Ecosystem typology\nThe description of this macrogroup overlaps with the following vegetation units for Chile (Luebert and Pliscoff 2017):\n\n\n\n\n\n\n\n\n\n\n\nPISO\nID\nMacrogroup code\nEcological System\n\n\n\n\nBosque resinoso templado costero de Pilgerodendron uvifera y Astelia pumila\n82\nM663\n603.183\n\n\nBosque resinoso templado costero de Pilgerodendron uvifera y Tepualia stipularis\n81\nM663\n603.183\n\n\nMatorral arborescente caducifolio templado-antiboreal andino de Nothofagus antarctica y Chiliot\n71\nM663\n603.172\n\n\nMatorral arborescente caducifolio templado de Nothofagus antarctica y Berberis microphylla\n70\nM663\n603.172\n\n\nMatorral caducifolio templado andino de Nothofagus antarctica\n68\nM663\n603.172\n\n\nMatorral caducifolio templado andino de Nothofagus antarctica y Empetrum rubrum\n69\nM663\n603.172\n\n\nMatorral siempreverde templado costero de Pilgerodendron uvifera y Nothofagus nitida\n93\nM663\n603.183\n\n\n\n\n\n\n\nCrosswalk provided by P. Pliscoff, pers. comm. 2016."
-  },
-  {
-    "objectID": "continental/1.B.3/M663.html#ecosystem-classification",
-    "href": "continental/1.B.3/M663.html#ecosystem-classification",
-    "title": "M663 – Valdivian Temperate Flooded & Swamp Forest",
-    "section": "Ecosystem classification",
-    "text": "Ecosystem classification\nThe description of this macrogroup overlaps with the following vegetation units for Chile (Luebert and Pliscoff 2017):\n\n\n\n\n\n\n\n\n\n\n\nPISO\nID\nMacrogroup code\nEcological System\n\n\n\n\nBosque resinoso templado costero de Pilgerodendron uvifera y Astelia pumila\n82\nM663\n603.183\n\n\nBosque resinoso templado costero de Pilgerodendron uvifera y Tepualia stipularis\n81\nM663\n603.183\n\n\nMatorral arborescente caducifolio templado-antiboreal andino de Nothofagus antarctica y Chiliot\n71\nM663\n603.172\n\n\nMatorral arborescente caducifolio templado de Nothofagus antarctica y Berberis microphylla\n70\nM663\n603.172\n\n\nMatorral caducifolio templado andino de Nothofagus antarctica\n68\nM663\n603.172\n\n\nMatorral caducifolio templado andino de Nothofagus antarctica y Empetrum rubrum\n69\nM663\n603.172\n\n\nMatorral siempreverde templado costero de Pilgerodendron uvifera y Nothofagus nitida\n93\nM663\n603.183\n\n\n\n\n\n\n\nCrosswalk provided by P. Pliscoff, pers. comm. 2016.\n\n\n# A tibble: 1 × 5\n  eco_code eco_name                               efg_code biome_code membership\n  &lt;chr&gt;    &lt;chr&gt;                                  &lt;chr&gt;    &lt;chr&gt;           &lt;dbl&gt;\n1 M663     M663 Valdivian Temperate Flooded & Sw… TF1.2    TF1              0.05\n\n\n\n\nCrosswalk provided by Faber Langendoen, pers. comm. 2019."
-  },
-  {
-    "objectID": "continental/1.A.1/M573.html",
-    "href": "continental/1.A.1/M573.html",
-    "title": "M573 – Northern Andes Seasonal Dry Forest",
-    "section": "",
-    "text": "IVC.Name\n1.A.1.El.573 - Northern Andes Seasonal Dry Forest\n\n\nOverall.Category\nNE\n\n\nOverall.Bounds\nNA\n\n\nThreat.criteria\nNA"
-  },
-  {
-    "objectID": "continental/1.A.1/M573.html#description",
-    "href": "continental/1.A.1/M573.html#description",
-    "title": "M573 – Northern Andes Seasonal Dry Forest",
-    "section": "Description",
-    "text": "Description\nDescription of this macrogroup is available at NatureServe Explorer.\nPlease note the changes in code and nomenclature between the version used for the assessment (in this website) and the current values in the NatureServe database.\n\nCharacteristic biota\nThe list of characteristic biota includes 7 plant species:\nFabaceae; Bombacacae; Meliaceae; Bignoniaceae; Burseraceae Euphorbiaceae; Asteraceae; Cactaceae\n\n\nGeographical distribution\nGeospatial vector data for this macrogroup is available from José R. Ferrer-Paris (2024).\nThis macrogroup is present in the following countries and territories:\nColombia; Venezuela; Ecuador; Peru"
-  },
-  {
-    "objectID": "continental/1.A.1/M573.html#ecosystem-classification",
-    "href": "continental/1.A.1/M573.html#ecosystem-classification",
-    "title": "M573 – Northern Andes Seasonal Dry Forest",
-    "section": "Ecosystem classification",
-    "text": "Ecosystem classification\n\n\n\n\n\n\n\n\n\n\n\n\neco_code\neco_name\nefg_code\nbiome_code\nmembership\n\n\n\n\nM573\nM573 Northern Andean Seasonal Dry Forest CO, EC, PE, VE\nT1.2\nT1\n1\n\n\n\n\n\n\n\nCrosswalk provided by Faber Langendoen, pers. comm. 2019."
-  },
-  {
-    "objectID": "continental/1.A.1/M573.html#rle-assessment-2019",
-    "href": "continental/1.A.1/M573.html#rle-assessment-2019",
-    "title": "M573 – Northern Andes Seasonal Dry Forest",
-    "section": "RLE Assessment – 2019",
-    "text": "RLE Assessment – 2019\nThis section summarises the results from José Rafael Ferrer-Paris et al. (2019) for this macrogroup.\n\nValidation of distribution\nPrior to the RLE assessment, the distribution data for this macrogroup was validated with following results:\n\n\n\n\n\n\n\n\n\nFormation\nTropical Seasonally Dry Forest\n\n\nDivision\nTropical Andean Montane Dry Forest\n\n\nMacrogroup code\nM573\n\n\nName\n1.A.1.El.573 - Northern Andes Seasonal Dry Forest\n\n\nLocal\n0.28\n\n\nWithin 5km2\n0.99\n\n\nExpert confidence\nLow\n\n\nBioclimate\n0.643313\n\n\nEcoregion\n0.7883331\n\n\nCharacteristic Biota\n0.2446193\n\n\nLow overlap\n0.7301469\n\n\nHistoric Forest Cover\n0.833975\n\n\nIncluded in analysis\nFALSE\n\n\nNotes\nExcluded due to low expert confidence but moderate scores in consistency test\n\n\n\n\n\n\n\nResults by subcriterion\n\n\n\n\n\nA1\nNE\n\n\nbounds.A1\nNA\n\n\nA2b\nNE\n\n\nbounds.A2b\nNA\n\n\nA3\nNE\n\n\nbounds.A3\nNA\n\n\nB1\nNE\n\n\nB2\nNE\n\n\nB3\nNE\n\n\nC2a\nNE\n\n\nbounds.C2a\nNA\n\n\nC2b\nNE\n\n\nD1\nNE\n\n\nD2b\nNE\n\n\nD3\nNE"
->>>>>>> 5fe978e37a86c8b8634434af824b2cd7836f2f41
+    "text": "These macrogroups belong to several divisions within the IVC/EcoVeg classification hierarchy:\n\n\n\n\n\ncode\nlevel\nname\n\n\n\n\n1\nclass\n1 Forest & Woodland\n\n\n1.A\nsubclass\n1.A Tropical Forest & Woodland\n\n\n1.A.1\nformation\n1.A.1 Tropical Dry Forest & Woodland\n\n\n1.A.1.Ea\ndivision\n1.A.1.Ea Caribbeo-Mesoamerican Dry Forest\n\n\n1.A.1.Ei\ndivision\n1.A.1.Ei Colombian-Venezuelan Dry Forest\n\n\n1.A.1.Ej\ndivision\n1.A.1.Ej Guianan Dry Forest\n\n\n1.A.1.Ek\ndivision\n1.A.1.Ek Brazilian-Parana Dry Forest\n\n\n1.A.1.El\ndivision\n1.A.1.El Tropical Andean Montane Dry Forest\n\n\n\n\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nM134 - Caribbean Coastal Lowland Dry Forest\n\n\n\n\n\n\n1.A.1.Ea Caribbeo-Mesoamerican Dry Forest\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nM573 – Northern Andes Seasonal Dry Forest\n\n\n\n\n\n\n1.A.1.El Tropical Andean Montane\n\n\nColombia\n\n\nEcuador\n\n\nPeru\n\n\nVenezuela\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

@@ -1,5 +1,6 @@
 ---
 title: "Paraguay"
+date: 3 May 2024
 categories:
   - RLE workshop
   - RLE in progress

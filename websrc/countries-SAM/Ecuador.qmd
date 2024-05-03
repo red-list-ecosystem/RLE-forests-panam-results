@@ -1,5 +1,6 @@
 ---
-title: "Ecuador"
+title: "{{< fa map >}} Ecuador"
+date: 3 May 2024
 categories:
   - partial national RLE 
 ---

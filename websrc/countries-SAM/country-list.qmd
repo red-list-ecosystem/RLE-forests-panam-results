@@ -2,7 +2,7 @@
 title: "{{< fa globe >}} South America"
 subtitle: "Results by country"
 listing: 
- type: default
+ type: table
  sort: "date desc"
  categories: true
  sort-ui: [title, date]

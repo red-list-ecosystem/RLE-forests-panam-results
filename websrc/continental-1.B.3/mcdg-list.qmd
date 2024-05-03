@@ -1,5 +1,5 @@
 ---
-title: "{{< fa leaf >}} Temperate Flooded & Swamp Forest"
+title: "Temperate Flooded & Swamp Forest"
 subtitle: "Formation 1.B.3 Temperate Flooded & Swamp Forest"
 listing: 
  type: default

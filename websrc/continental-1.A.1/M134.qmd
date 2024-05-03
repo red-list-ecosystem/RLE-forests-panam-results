@@ -1,5 +1,6 @@
 ---
-title: "M134 - Caribbean Coastal Lowland Dry Forest"
+title: "Caribbean Coastal Lowland Dry Forest"
+subtitle: "{{< fa code >}} **1.A.1.Ea.134** or **M134**"
 categories:
   - 1.A.1.Ea Caribbeo-Mesoamerican Dry Forest
 execute: 

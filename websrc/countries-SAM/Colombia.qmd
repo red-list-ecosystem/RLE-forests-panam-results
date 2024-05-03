@@ -1,5 +1,6 @@
 ---
 title: "Colombia"
+date: 3 May 2024
 categories:
   - National ecosystem map
   - National RLE

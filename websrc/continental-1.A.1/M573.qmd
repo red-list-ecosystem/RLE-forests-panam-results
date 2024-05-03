@@ -15,7 +15,7 @@ editor_options:
 
 ```{r}
 library(dplyr)
-here::i_am("websrc/continental/1.A.1/mcdg-list.qmd")
+here::i_am("websrc/continental-1.A.1/mcdg-list.qmd")
 load(here::here("Rdata/20150130_EcoVeg_hierarchy.rda"))
 load(here::here("Rdata/20181123_MacrogroupsCountry.rda"))
 
