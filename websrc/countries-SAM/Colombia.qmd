@@ -6,7 +6,7 @@ categories:
   - National RLE
 ---
 
-There are national and subnational assessments available for Colombia [@Etter_2020; @Uribe_2021; @Uribe_2022].
+There are national and subnational assessments available for Colombia [@Etter_2020; @Uribe_2021; @Uribe_2022]. There are subnational assessments in preparation for Andean ecosystems (Gwendolyne comm. pers.)
 
 An update of the national assessment is currently underway.
 

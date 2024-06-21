@@ -5,9 +5,9 @@ categories:
   - partial national RLE 
 ---
 
-There is a partial national assessments for the forests of Ecuador [@Noh_2020].
+There is a partial national assessments for the forests of Ecuador [@Noh_2020]. There are subnational assessments in preparation for Andean ecosystems (Gwendolyne comm. pers.) including some for non forest ecosystems (e.g. Ferrer-Paris glaciers)
 
-There are interested organisations planning to do more RLE assessments in Ecuador.
+There are interested organisations planning to do more RLE assessments in Ecuador. ADD REFS
 
 Local organisations should be contacted to inquire about the status of RLE assessments in the country.
 

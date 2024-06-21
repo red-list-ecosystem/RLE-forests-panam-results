@@ -6,7 +6,7 @@ This website provides a summary and update of the results from the IUCN Red List
 
 The original assessment and analysis was published by @Ferrer-Paris_2019_RLE_Forests.
 
-The continental-scale assessment was a flagship project of the IUCN Red List of Ecosystem Thematic group and is used as an example for many other applications of the RLE [@Bland_2019_Impact_RLE; @Nicholson_2024]. There is a critical need to update and improve the assessment as new information is available and make sure future users are aware of the caveats of this assessment and that they are able to use the best available data and results for decision making and reporting.
+The continental-scale assessment was a flagship project of the IUCN Red List of Ecosystem Thematic group and is used as an example for many other applications of the RLE [@Bland_2019_Impact_RLE; @Nicholson_2024]. There is a critical need to update and improve the assessment as new information is available. We also want to make sure future users are aware of the caveats of this assessment and that they are able to use the best available data and results for decision making and reporting.
 
 An official summary of the original assessment is available [on-line](https://assessments.iucnrle.org/systematics/8), and the original results dataset (Rdata format) is available at: 
 

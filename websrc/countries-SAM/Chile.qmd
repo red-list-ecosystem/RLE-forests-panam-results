@@ -20,7 +20,7 @@ For Chile the current version of the map used for the national RLE assessment is
  
 ### Download the data
 
-The repository includes several compressed shapefiles and csv files with additional tabular data (check file shape_pisos.zip), and it also includes a csv file with the IUCN RLE results. 
+The repository includes several compressed shapefiles and csv files with additional tabular data (check file `shape_pisos.zip`), and it also includes a `csv` file with the IUCN RLE results. 
 
 We first download and uncompress the shapefile with the vegetion units `shape_pisos`:
 
