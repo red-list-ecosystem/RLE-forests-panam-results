@@ -1,6 +1,7 @@
 *~
 sandbox/
 .Rproj.user
+docs/
 
 # do we need this?
 rsconnect
